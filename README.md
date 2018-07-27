@@ -6,6 +6,8 @@
 
 This is the repo for my portfolio site
 
+Eventual Portfolio site: https://thatstb.github.io/
+
 Home <https://github.com/ThatsTB>
 
 Thats it
