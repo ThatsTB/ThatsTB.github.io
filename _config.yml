@@ -1,4 +1,6 @@
 theme: jekyll-theme-cayman
+name: Portfolio Thomas Bosma
+ 
  - jekyll-feed
  - jekyll-redirect-from
  - jekyll-seo-tag
