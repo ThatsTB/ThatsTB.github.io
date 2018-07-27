@@ -3,7 +3,7 @@
 ## Hello all,
 
 *This is my first time here*
-This is going to be my portfolio repo
+This is the repo for my portfolio site
 Home <https://github.com/ThatsTB>
 
 Thats it
