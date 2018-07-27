@@ -1,11 +1,14 @@
 # ThatsTB.github.io
 
-Hello all,
+## Hello all,
 
-This is my first time here
+*This is my first time here*
 
-this is going to be my portfolio repo
+This is going to be my portfolio repo
 
 Home <https://github.com/ThatsTB>
 
 Thats it
+
+**Jotaro Kujo**
+> Yare Yare Daze...
