@@ -1,18 +1,21 @@
-# ThatsTB.github.io
-
 ## Hello all,
 
-*This is my first time here*
+#####*This is my first time here*
 
-This is the repo for my portfolio site
-
-Eventual Portfolio site: https://thatstb.github.io/
-
-Home <https://github.com/ThatsTB>
-
-Thats it
+I don't know how you got here but, 
+this is the repository for my portfolio site
 
 
+**Links**
+
+1. Eventual Portfolio site: https://thatstb.github.io/
+
+1. Home <https://github.com/ThatsTB>
+
+That's about it.
+
+
+## Test stuff
 
 **Jotaro Kujo**
 > Yare Yare Daze...
