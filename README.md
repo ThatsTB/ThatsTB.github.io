@@ -1,5 +1,4 @@
-## Hello there,
-![alt text](https://i.giphy.com/media/Nx0rz3jtxtEre/giphy.webp) 
+## Hello all,
 
 ###### *This is my first time here*
 
