@@ -1,15 +1,44 @@
+
 body {
-    background-color: lightrey;
+    background-color: white;
 }
+
+div { 
+	background-color: grey;
+    width: 500px;
+    align: center;
+}
+
 h1 {
-    color: white;
-    text-allign: left;
+    color: grey;
+    text-align: left;
+    font-family: Monospace;
+	font-size: 70px;
+    text-transform: uppercase;
+}
+
+h2 {
+	color: lightgrey;
+    text-align: center;
+    font family: courier new;
+	font-size: 30px;
+}
+
+h3 {
+	color: lightgrey;
+    text-align: left;
+    font family: courier new;
 }
 
 p {
-    font-family: Trebuchet;
-    font-size: 20 px;
+	color: black;
+    font-family: verdana;
+    font-size: px20;
+    text-align: centre;
 }
+
+
+
 
     
        
