@@ -1,6 +1,3 @@
----
-title: Portfolio Thomas Bosma
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,43 +9,127 @@ BEGIN CSS
 <style>
  
 body {
-    background-color: white;
+    font-family: Courier New;
+    background-color:white;
+    
+    /*background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOwry4x6XOJXvag-a5CqSxf1h4Ydz1hhuuotPg6Ll0ARwWdnK");
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-size:100px;100px;
+    */
+}
+.menu {
+    text-align: center;
+    display: inline-block;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
 }
 
-div { 
+.bar1, .bar2, .bar3 {
+	margin: auto;
+    width: 250px;
+    height: 10px;
+    background-color: #333;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+.button {
 	background-color: grey;
-    width: 700px;
-    align: center;
-
+    color: white;
+	border: 0;
+	text-align: center;
+    opacity: 0;
+    transition: 0.4s;
+    margin: auto;
+    width: 200px; 
+  	height: 40px;
+    display: inline-block;
 }
-.colorbox1 {
+
+.change .bar1 {
+    -webkit-transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
+}
+
+.change .bar2 {
+	-webkit-transform: translate(0px, 150px);
+    transform: translate(0px, 15ßpx);
+} 
+
+.change .bar3 {
+    -webkit-transform: translate(0px, 250px);
+    transform: translate(0px, 250px);
+}
+.change .button1 {
+	-webkit-opacity:0.5;
+    -webkit-transform: translate(0px, 100px);
+    
+}
+.change .button2 {
+	-webkit-opacity:0.5;
+    -webkit-transform: translate(0px, 200px);
+    
+}
+.change .button3 {
+	-webkit-opacity:0.5;
+    -webkit-transform: translate(0px, 300px);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.colorboxovermij {
 	background-color: lightgrey;
-    width: 1000px;
-    align: left;
+    width: 100%;
+    align: center;
     padding: 10px;
-    margin-left: 80px;
+}
+.textovermij {
+	width: 1000px;
+   	margin-left: 220px;
 }
 .overmij {
-	color: lightgrey;
+	color: #52527a;
     text-align: center;
-    font-family: Verdana;
-    width: 120px;
-    height: 27px;
-	font-size: 20px;
-    margin-left: 220px
+    font-family: Courier New;
+    width: 180px;
+    height: 60px;
+    margin-bottom: -40px;
+	font-size: 25px;
+    margin-left: 220px;
+    background-color: #f0f0f5;
 }
-.logoboi {
+.logo {
 	margin-top: 0px;
+    margin-left:10px;
+    margin-bottom: -226px;
     position: static;
     z-index: 999;
+    width:220px;
+    height:220px;
+}
+.linklogos {
+	text-align:center;
+    background: white;
+    position:static;
+	width: 100%;
+    vertical-align: top;
+    display: inline-block;
+    
+}
+.caption {
+	display: block;
 }
 .a {
 	align: center;
 }
 .fa {
-  padding:20px;
+  padding: 20px;
   font-size: 30px;
-  width: 100px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -66,17 +147,18 @@ div {
 }
 h1 {
     color: grey;
-    text-align: left;
+    text-align: center;
     font-family: Monospace;
-	font-size: 10vw;
+	font-size: 60px;
     text-transform: uppercase;
 }
 
 h2 {
 	color: lightgrey;
     text-align: center;
-    font-family: Verdana;
-	font-size: 8vw;
+    position: static;
+    font-family: Monospace;
+	font-size: 40px;
 }
 h3 {
 	color: lightgrey;
@@ -108,12 +190,14 @@ p2 {
 </style>
 
 <!-- 
+****
 EINDE CSS 
+****
 -->
 
 <title>Portfolio Thomas Bosma </title>
-<link rel="icon" href="https://drive.google.com/uc?id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://drive.google.com/uc?id=1FyK94DMayaFZfI-		L1F8feJ1PQM03VTsT">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -121,28 +205,51 @@ EINDE CSS
 HOOFDPAGINA
 -->
 
-<h1>Portfolio</h1>
-<div> <h2> Thomas Bosma </h2> </div>
-<img class="logoboi" border=0 src="https://drive.google.com/uc?id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT" width= "200" height= "200" >
+	<h1>thomas bosma</h1>
+	<div> <h2> Portfolio </h2> </div>
+	<img class="logo" border=0 src="https://drive.google.com/uc?				id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT" width= "200" height= "200" >
 
 <!-- 
 PAGINA LINKS
 -->
 
-<h3> <a href="#School">School</a> </h3>
-<h3> <a href="#Vrije tijd">Vrije tijd</a> </h3>
+<div class="menu">
+
+	<ul class="container" onclick="Schuif(this)">
+
+    <div class="bar1"></div>
+  		<div>
+        	<h3 class="button button1 fade"> <a 							href="#overmij">Over mij</a> </h3>
+        	</div>
+  	<div class="bar2"></div>
+  		<div>
+        	<h3 class="button button2 fade"> <a 							href="#school">School</a> </h3></div>
+  	<div class="bar3"></div>
+  		<div>
+        <h3 class="button button3 fade"> <a href="#vrijetijd">Vrije tijd</a> </h3></div>
+       
+	</ul>
+
+</div>
+
+<script>
+	function Schuif(x) {
+    	x.classList.toggle("change");
+}	
+</script>
 
 <!-- 
 OVER MIJ
 -->
-<h3> <div class="overmij"> Over Mij </h3>
-<div class=colorbox1><p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de richting Natuur en Techniek.</p>
-<p>
-In mijn vrije tijd speel ik Hockey, teken ik, 'bouw' ik met Lego en zet ook wel eens model kits in elkaar. Ook vindt ik het leuk om verschillende dingen op de computer te doen zoals games spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze site maken. </p>
+<h3> <div id="overmij" class="overmij"> Over Mij </div> </h3> 
+<div class=colorboxovermij>
+	<p class=" textovermij">Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 	oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala 	(in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de 			richting Natuur en Techniek.</p>
+	<p class=" textovermij">
+	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik 		met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik 		het leuk om verschillende dingen op de computer te doen zoals games 		spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze 		site maken. </p>
 
-<h3> Toekomst </h3>
 
-<p>Voor de komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in tekenen op papier en op de computer. Ook zou ik beter willen worden in verslagen schrijven. HTML en CSS leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p></div>
+
+	<p class=" textovermij">Voor de komende projecten, zowel voor projecten 	van school als in mijn vrije tijd, zou ik graag beter willen worden in 		tekenen op papier en op de computer. Ook zou ik beter willen worden in 		verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het 		progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil 	ik een kleine game en animatie maken. </p></div>
 
 
 <!--
@@ -156,7 +263,7 @@ In mijn vrije tijd speel ik Hockey, teken ik, 'bouw' ik met Lego en zet ook wel 
 SCHOOL
 -->
 
-<h3> School </h3>
+<h3> <div id="school" class="school"> School </div> </h3>
 
 
 <!--
@@ -164,10 +271,10 @@ VRIJE TIJD
 -->
 
 
-<h3> Vrije tijd </h3>
+<h3> <div id="vrijetijd" class="vrijetijd"> Vrije tijd </div> </h3>
 
 <h4>Lego </h4>
-<p2> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
+<p2> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op 	Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
 </p2>
 
 
@@ -189,11 +296,24 @@ VIDEOS
 LINKS
 -->
 
-<a href=" https://www.flickr.com/photos/141990353@N02/" target="_blank"><img border=0 src="https://drive.google.com/uc?id=11IN4eB51P1-NUp5GDEe2HpWLRLIapMy7" style="width:100px;height:100px;border:0;"class= "fa fa-flickr"></a>
+<div class=linklogos> 
+	<span class="caption">Links -> </span>
+		<a href=" https://www.flickr.com/photos/141990353@N02/" 					target="_blank"><img border=0 src="https://drive.google.com/uc?				id=11IN4eB51P1-NUp5GDEe2HpWLRLIapMy7" 										style="width:70px;height:70px;border:0;"class= "fa fa-flickr"></a>
+	<span class="caption" style=font-size:13px;margin-top:-23px;>Flickr</span>
 
-<a href=" https://www.instagram.com/bionic.t.b/ " target="_blank"><img border=0 src="https://drive.google.com/uc?id=1snBRsYCKdqOysngV0n3TAZT6lu-lghVK" style="width:100px;height:100px;border:0;" class= "fa fa-inst"></a>
+	<a href=" https://www.instagram.com/bionic.t.b/ " target="_blank"><img 		border=0 src="https://drive.google.com/uc?id=1snBRsYCKdqOysngV0n3TAZT6lu-	lghVK" style="width:70px;height:70px;border:0;" class= "fa fa-insta"></a>
+	<span class="caption" style=font-size:13px;margin-top:-23px;>Instagram</span>
+
+</div>
+
+<p style=font-size:10px;>2018-2018 Thomas Bosma</p>
+
 
 
 
 </body>
 </html>
+  
+    
+
+
