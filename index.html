@@ -7,9 +7,13 @@ BEGIN CSS
 -->
 
 <style>
- 
+
+/*
+menus, kopjes, etc
+*/
+
 body {
-    font-family: Courier New;
+	font-family: Cavair Dreams;
     background-color:white;
     
     /*background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOwry4x6XOJXvag-a5CqSxf1h4Ydz1hhuuotPg6Ll0ARwWdnK");
@@ -18,71 +22,61 @@ body {
     background-size:100px;100px;
     */
 }
-.menu {
-    text-align: center;
-    display: inline-block;
+.parallax { 
+    background-image: url("https://drive.google.com/uc?id=1JrdZF1Y4fPG9VAShQi8u-3bSJgmuIoJ0");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.container {
-    display: inline-block;
+.linkmenu {
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+   margin: auto;
+}
+.bars {
+    display: block;
     cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
-	margin: auto;
-    width: 250px;
+    width: 270px;
     height: 10px;
-    background-color: #333;
+    background-color: #373749;
     margin: 10px 0;
     transition: 0.4s;
 }
-.button {
-	background-color: grey;
+.link {
+	background-color: #6e6e91;
+    text-decoration:solid;
     color: white;
 	border: 0;
-	text-align: center;
+	position: center;
+    text-align: center;
     opacity: 0;
-    transition: 0.4s;
+    transition: 0.70s;
     margin: auto;
     width: 200px; 
   	height: 40px;
-    display: inline-block;
+    display: block;
+    pointer-events: none;
 }
-
-.change .bar1 {
-    -webkit-transform: translate(0px, 50px);
-    transform: translate(0px, 50px);
+.pijl {
+	padding: 30px;
+    color: black;
 }
-
-.change .bar2 {
-	-webkit-transform: translate(0px, 150px);
-    transform: translate(0px, 15ßpx);
-} 
-
-.change .bar3 {
-    -webkit-transform: translate(0px, 250px);
-    transform: translate(0px, 250px);
-}
-.change .button1 {
-	-webkit-opacity:0.5;
-    -webkit-transform: translate(0px, 100px);
-    
-}
-.change .button2 {
-	-webkit-opacity:0.5;
-    -webkit-transform: translate(0px, 200px);
-    
-}
-.change .button3 {
-	-webkit-opacity:0.5;
-    -webkit-transform: translate(0px, 300px);
-}
-
 img {
     max-width: 100%;
     height: auto;
 }
+.overmijkop {
+	background-color: white;
+    padding-top: 1000px;
+}
 .colorboxovermij {
-	background-color: lightgrey;
+	background-color: #f0f0f4;
     width: 100%;
     align: center;
     padding: 10px;
@@ -92,7 +86,7 @@ img {
    	margin-left: 220px;
 }
 .overmij {
-	color: #52527a;
+	color: white;
     text-align: center;
     font-family: Courier New;
     width: 180px;
@@ -100,12 +94,12 @@ img {
     margin-bottom: -40px;
 	font-size: 25px;
     margin-left: 220px;
-    background-color: #f0f0f5;
+    background-color: #6e6e91;
 }
 .logo {
-	margin-top: 0px;
-    margin-left:10px;
-    margin-bottom: -226px;
+	padding-top: 0px;
+    margin-left:0px;
+    margin-bottom: -150px;
     position: static;
     z-index: 999;
     width:220px;
@@ -118,7 +112,6 @@ img {
 	width: 100%;
     vertical-align: top;
     display: inline-block;
-    
 }
 .caption {
 	display: block;
@@ -154,16 +147,16 @@ h1 {
 }
 
 h2 {
-	color: lightgrey;
+	color: #a8a8bd;
     text-align: center;
     position: static;
     font-family: Monospace;
-	font-size: 40px;
+	font-size: 30px;
 }
 h3 {
 	color: lightgrey;
     text-align: left;
-    font-family: Courier New;
+    font-family: DejaVu Sans Mono, monospace	;
 }
 h4 {
 	color: lightgrey;
@@ -184,9 +177,50 @@ p2 {
     font-size: px20;
     text-align: left;
 }
+/*
+actions
+*/
+.change .bar1 {
+    -webkit-transform: translate(0px, 20px);
+    transform: translate(0px, 20px);
+}
 
+.change .bar2 {
+	-webkit-transform: translate(0px, 70px);
+    transform: translate(0px, 70px);
+} 
 
-
+.change .bar3 {
+    -webkit-transform: translate(0px, 120px);
+    transform: translate(0px, 120px);
+}
+.change .link1 {
+	-webkit-opacity:0.5;
+    opacity:0.5;
+    -webkit-transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
+    pointer-events: all;
+    
+}
+.change .link2 {
+	-webkit-opacity:0.5;
+    opacity:0.5;
+    -webkit-transform: translate(0px, 100px);
+    transform: translate(0px, 100px);
+    pointer-events: all;
+    
+}
+.change .link3 {
+	-webkit-opacity:0.5;
+    opacity:0.5;
+    -webkit-transform: translate(0px, 150px);
+    transform: translate(0px, 150px);    
+    pointer-events: all;
+}
+.fade:hover {
+	opacity: 1;
+    transition: 0.8s;
+    
 </style>
 
 <!-- 
@@ -200,33 +234,35 @@ EINDE CSS
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<a href="file:///D:/Portfolio%20website/index-en.html">EN</a>
+<a href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
 
 <!-- 
 HOOFDPAGINA
 -->
-
-	<h1>thomas bosma</h1>
-	<div> <h2> Portfolio </h2> </div>
-	<img class="logo" border=0 src="https://drive.google.com/uc?				id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT" width= "200" height= "200" >
+		<h1 style=color:#6c6c93;>TB</h1>
+		<div> <h2> Portfolio </h2> </div>
 
 <!-- 
 PAGINA LINKS
 -->
 
-<div class="menu">
+<div class="linkmenu">
 
-	<ul class="container" onclick="Schuif(this)">
+	<ul class="bars" onclick="Schuif(this)">
 
     <div class="bar1"></div>
   		<div>
-        	<h3 class="button button1 fade"> <a 							href="#overmij">Over mij</a> </h3>
+        	
+        	<h3 class="link link1 fade"><a style=text-decoration:none;color:white;font-size:25px;					
+            href="#overmij">>Over mij</a> </h3>
         	</div>
   	<div class="bar2"></div>
   		<div>
-        	<h3 class="button button2 fade"> <a 							href="#school">School</a> </h3></div>
+        	<h3 class="link link2 fade"> <a style=text-decoration:none;color:white;font-size:25px				href="#school">>School</a> </h3></div>
   	<div class="bar3"></div>
   		<div>
-        <h3 class="button button3 fade"> <a href="#vrijetijd">Vrije tijd</a> </h3></div>
+        <h3 class="link link3 fade"> <a style=text-decoration:none;color:white;font-size:25px				 		href="#vrijetijd">>Vrije tijd</a> </h3></div>
        
 	</ul>
 
@@ -241,6 +277,8 @@ PAGINA LINKS
 <!-- 
 OVER MIJ
 -->
+<div class=overmijkop>
+	<img class="logo" border=0 src="https://drive.google.com/uc?				id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT" width= "200" height= "200" >
 <h3> <div id="overmij" class="overmij"> Over Mij </div> </h3> 
 <div class=colorboxovermij>
 	<p class=" textovermij">Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 	oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala 	(in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de 			richting Natuur en Techniek.</p>
@@ -250,20 +288,22 @@ OVER MIJ
 
 
 	<p class=" textovermij">Voor de komende projecten, zowel voor projecten 	van school als in mijn vrije tijd, zou ik graag beter willen worden in 		tekenen op papier en op de computer. Ook zou ik beter willen worden in 		verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het 		progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil 	ik een kleine game en animatie maken. </p></div>
-
-
-<!--
-2de PAGINA
--->
-
-<h3> Projecten? </h3>
-
-
+</div>
 <!--
 SCHOOL
 -->
 
 <h3> <div id="school" class="school"> School </div> </h3>
+<h3>Klas 1: Kinderboerderij Schuylenburgh</h3>
+	<p>Dit was een van de eerste O en O opdrachten die ik kreeg op school, ik werd geplaatst in een groepje. We moesten van de kleine kinderboerderij naast de Schuylenburgh een kinderspeelpark maken. Dit vond ik leuk omdat ik veel mocht schetsen en omdat je veel verschillende materialen mocht gebruiken om het prototype te maken.</p>
+<h3>Klas 2: Belichting van het Simonsplein</h3>
+	<p>Voor dit project moesten we de huidige belichtingen van het Simonsplein in Doetinchem veranderen. Hier mocht ik ook weer heel wat voor schetsen en prototypes maken. Wij hebben dit project ook gewonnen en zijn door gegaan naar de regionale voorronde van de Technasium Top Award die we helaas niet hebben gewonnen.</p>
+<h3>Klas 3: Dierenhulp APP</h3>
+	<p>De opdrachtgever vroeg ons om een app te maken, die het gemakkelijker en sneller zou maken om de dierenambulance in te lichten over een ongeluk met een dier. Dit was erg leuk omdat je zelf een app mocht ontwikkelen. Met het programma werken om de app te maken was erg interessant.</p>
+<h3>Klas 4: Luciferprobleem</h3>
+	<p>Dit was de eerste opdracht in klas 4. De opdracht was om een alledaags probleem uit te kiezen en hiervoor een oplossing bedenken. Als groep kozen we het breken van lucifers. Een beter (niet opgelost) probleem vinden was erg lastig.</p>
+<h3>Klas 4: Restwarmte</h3>
+	<p>Voor dit project moesten we zelf een opdrachtgever zoeken. Contour heeft ons de opdracht gegeven om verspilling van restwarmte uit datacenters tegen te gaan. Hiervoor hebben wij twee soorten oplossingen bedacht: de warmte en/of het water gebruiken, het warme water omzetten in energie met een peltier-element of ORC. Tijdens dit project hebben we ons meer gericht op technische opbouw dan de creatieve.</p>
 
 
 <!--
@@ -272,13 +312,10 @@ VRIJE TIJD
 
 
 <h3> <div id="vrijetijd" class="vrijetijd"> Vrije tijd </div> </h3>
-
-<h4>Lego </h4>
+<h3>Tekeningen</h3>
+<h3>Lego </h3>
 <p2> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op 	Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
 </p2>
-
-
-
 <!-- 
 VIDEOS
 -->
@@ -293,7 +330,7 @@ VIDEOS
 
 
 <!-- 
-LINKS
+LOGOLINKS
 -->
 
 <div class=linklogos> 
@@ -306,7 +343,16 @@ LINKS
 
 </div>
 
-<p style=font-size:10px;>2018-2018 Thomas Bosma</p>
+
+
+
+<h3>Overig</h3>
+
+
+
+
+
+<p style=font-size:10px;>2018-2018 Thomas Bosma</p>NL
 
 
 
