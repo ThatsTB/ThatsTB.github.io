@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,22 +14,76 @@ menus, kopjes, etc
 */
 
 body {
-	font-family: Cavair Dreams;
-    background-color:white;
-    
-    /*background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOwry4x6XOJXvag-a5CqSxf1h4Ydz1hhuuotPg6Ll0ARwWdnK");
-    background-repeat:repeat;
-    background-attachment: fixed;
-    background-size:100px;100px;
-    */
+	margin: 0;
+	font-family: monospace, Cavair Dreams, Arial, Helvetica, sans-serif;;
+    background-color: white;
 }
 .parallax { 
-    background-image: url("https://drive.google.com/uc?id=1JrdZF1Y4fPG9VAShQi8u-3bSJgmuIoJ0");
     height: 500px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.topnav {
+	overflow: hidden;
+    background-color: #373749; 
+}
+.belownav {
+	overflow: hidden;
+    background-color: #373749; 
+}
+.taal a {
+	background-color: #6e6e91;
+	float: center right ;
+    color: black;
+    text-color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+    text-transform: uppercase;
+}
+.topnav a {
+	float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+    text-transform: uppercase;
+}
+.belownav a {
+	float: left;
+    margin-left: 40px;
+    width: 100px;
+    margin-right: 60px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+    text-transform: uppercase;
+}
+.topnav a:hover {
+	background-color: #6e6e91;
+    color: white;
+    transition: 0.4s;
+}
+.belownav a:hover {
+	background-color: #6e6e91;
+    color: white;
+    transition: 0.4s;
+}
+.taal a:hover {
+	background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.textboven {
+	display: flex;
+    justify-content: center;
+    font-size: 10px;
 }
 .linkmenu {
    display: flex;
@@ -48,6 +103,9 @@ body {
     margin: 10px 0;
     transition: 0.4s;
 }
+.arrow {
+    margin-bottom: 7px;
+}
 .link {
 	background-color: #6e6e91;
     text-decoration:solid;
@@ -56,16 +114,12 @@ body {
 	position: center;
     text-align: center;
     opacity: 0;
-    transition: 0.70s;
+    transition: 0.6s;
     margin: auto;
     width: 200px; 
   	height: 40px;
     display: block;
     pointer-events: none;
-}
-.pijl {
-	padding: 30px;
-    color: black;
 }
 img {
     max-width: 100%;
@@ -138,12 +192,17 @@ img {
 	background: white;
     color:white;
 }
+.TB {
+	margin-left: 10px;
+    text-color:#6c6c93;
+}
 h1 {
-    color: grey;
+    color: #6c6c93;
     text-align: center;
     font-family: Monospace;
 	font-size: 60px;
     text-transform: uppercase;
+    margin-top: 60px;
 }
 
 h2 {
@@ -156,13 +215,13 @@ h2 {
 h3 {
 	color: lightgrey;
     text-align: left;
-    font-family: DejaVu Sans Mono, monospace	;
+    font-family: DejaVu Sans Mono, monospace;
 }
 h4 {
 	color: lightgrey;
 }
 h5 {
-	color:lightgrey;
+	color: lightgrey;
 }
 p {
 	color: black;
@@ -217,6 +276,14 @@ actions
     transform: translate(0px, 150px);    
     pointer-events: all;
 }
+.arrow .belownav:hover{
+    -webkit-transform: translate(10px, 10px);
+    transform: translate(10px, 10px); 
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition:0.5s;
+    
+}
 .fade:hover {
 	opacity: 1;
     transition: 0.8s;
@@ -234,21 +301,40 @@ EINDE CSS
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<a href="file:///D:/Portfolio%20website/index-en.html">EN</a>
-<a href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
+
+<!-- 
+BODY
+-->
+
+
+<div class="topnav">
+
+	<div class="taal">
+  <a  class="taal" href="file:///D:/Portfolio%20website/index-en.html">EN </a>
+    
+  <a class="taal" href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
+  </div>
+  
+
+
+  <a style=margin-right:50px; href="#vrijetijd">|Vrije Tijd</a>
+  <a href="#school">|School</a>
+  <a href="#overmij">|Over Mij</a>
+  
+
+</div>
 
 <!-- 
 HOOFDPAGINA
 -->
-		<h1 style=color:#6c6c93;>TB</h1>
-		<div> <h2> Portfolio </h2> </div>
+	
 
-<!-- 
-PAGINA LINKS
--->
+	<div class="TB">
+		<h1 class="TB" >Thomas Bosma </h1>
+		<div > <h2> Portfolio </h2> </div>
+  	</div>
 
 <div class="linkmenu">
-
 	<ul class="bars" onclick="Schuif(this)">
 
     <div class="bar1"></div>
@@ -351,10 +437,18 @@ LOGOLINKS
 
 
 
+<div class="belownav">
 
-<p style=font-size:10px;>2018-2018 Thomas Bosma</p>NL
+<div class="arrow">
+<a class="belownav" href=#top>
+<div class="arrow"> <<< </div> Terug 
+</a>
+</div>
+
+<p style=font-size:12px;color:white;text-align:right;margin-top:60px;margin-right:30px;> &copy; 2018 T. Bosma</p>
 
 
+</div>
 
 
 </body>
