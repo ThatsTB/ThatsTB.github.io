@@ -1,6 +1,8 @@
-
 <!DOCTYPE html>
 <html>
+<!--
+no read, very much classified, such bad
+-->
 <head>
 
 <!-- 
@@ -16,14 +18,48 @@ menus, kopjes, etc
 body {
 	margin: 0;
 	font-family: monospace, Cavair Dreams, Arial, Helvetica, sans-serif;;
-    background-color: white;
+    background-color: transparent;
 }
-.parallax { 
-    height: 500px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+h1 {
+    color: #6c6c93;
+    text-align: center;
+    font-family: Monospace;
+	font-size: 45px;
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+h2 {
+	color: white;
+    text-align: center;
+    position: static;
+    font-family: Monospace;
+	font-size: 30px;
+    padding: 0px;
+}
+h3 {
+	color: lightgrey;
+    text-align: left;
+    font-family: DejaVu Sans Mono, monospace;
+}
+h4 {
+	color: blue;
+}
+h5 {
+	color: blue;
+}
+p {
+	color: black;
+    font-family: Courier New;
+    font-size: px15;
+    text-align: left;
+    margin-left: 140px
+}
+p2 {
+	color: black;
+    font-family: Courier New;
+    font-size: px20;
+    text-align: left;
 }
 .topnav {
 	overflow: hidden;
@@ -32,6 +68,9 @@ body {
 .belownav {
 	overflow: hidden;
     background-color: #373749; 
+    bottom: 0;
+    position: relative;
+    
 }
 .taal a {
 	background-color: #6e6e91;
@@ -66,8 +105,8 @@ body {
     text-transform: uppercase;
 }
 .topnav a:hover {
-	background-color: #6e6e91;
-    color: white;
+	background-color: white;
+    color: #373749;
     transition: 0.4s;
 }
 .belownav a:hover {
@@ -80,31 +119,35 @@ body {
     color: black;
     transition: 0.5s;
 }
-.textboven {
-	display: flex;
+.TB {
+    display: inline;
     justify-content: center;
-    font-size: 10px;
+    align-items: center;
+    position: relative;
+    top: -390px;
+    width: 100%;
+   
 }
 .linkmenu {
    display: flex;
    justify-content: center;
-   padding: 30px;
-   margin: auto;
+   align-items: center;
+   padding-top: 30px;
+   position: relative;
 }
 .bars {
-    display: block;
+    display: inline;
     cursor: pointer;
+    padding: 0;
 }
 
 .bar1, .bar2, .bar3 {
     width: 270px;
     height: 10px;
     background-color: #373749;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
     transition: 0.4s;
-}
-.arrow {
-    margin-bottom: 7px;
 }
 .link {
 	background-color: #6e6e91;
@@ -121,54 +164,97 @@ body {
     display: block;
     pointer-events: none;
 }
+#triangle-topleft {
+	width: auto;
+	height: 0;
+	border-top: 500px solid #e6e6ff;
+	border-right: 1000px solid transparent;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+#triangle-bottomright {
+	width: auto;
+	height: 0;
+	border-bottom: 500px solid #e5ecff;
+	border-left: 1000px solid transparent;
+    top: -600px;
+    position: relative;
+    z-index: -1;
+    margin: 0px;
+    padding: 0px;
+}			
 img {
     max-width: 100%;
     height: auto;
 }
-.overmijkop {
-	background-color: white;
-    padding-top: 1000px;
+
+/*
+
+inhoud
+
+*/
+
+.inhoud {
+	display: flex;
+    position: relative;
+    align-items: top;
+    justify-content: center;
+    width: 100%;
+    
 }
-.colorboxovermij {
+.inhoudovermij {
+	display: flex;
+    position: relative;
+    align-items: top;
+    justify-content: center;
+    width: 100%;
+    
+}
+.inhoudh2 {
+	position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	color: white;
+    text-align: center;
+    font-family: Monospace;
+    text-transform: uppercase;
+    width: 150px;
+    height: 400px;
+	font-size: 35px;
+    padding: 20px;
+    margin-left: 25px;
+    background-color: #6e6e91;
+    z-index: 2;
+}
+.inhoudbox {
+	position: relative;
 	background-color: #f0f0f4;
+    height: 1000px;
     width: 100%;
     align: center;
     padding: 10px;
+    margin-top: 200px;
+    z-index: -1;  	
 }
-.textovermij {
-	width: 1000px;
-   	margin-left: 220px;
-}
-.overmij {
-	color: white;
-    text-align: center;
-    font-family: Courier New;
-    width: 180px;
-    height: 60px;
-    margin-bottom: -40px;
-	font-size: 25px;
-    margin-left: 220px;
-    background-color: #6e6e91;
-}
-.logo {
-	padding-top: 0px;
-    margin-left:0px;
-    margin-bottom: -150px;
-    position: static;
-    z-index: 999;
-    width:220px;
-    height:220px;
+.barprojecten {
+	width:100%;
+    height: 100px;
+    background-color: #373749;
+   	position: relative;
+    margin-top: 600px;
+    padding-bottom: 100px;
+    
+
 }
 .linklogos {
-	text-align:center;
-    background: white;
-    position:static;
+	text-align: center;
+    background: transparent;
+    position: static;
 	width: 100%;
     vertical-align: top;
     display: inline-block;
-}
-.caption {
-	display: block;
 }
 .a {
 	align: center;
@@ -192,88 +278,45 @@ img {
 	background: white;
     color:white;
 }
-.TB {
-	margin-left: 10px;
-    text-color:#6c6c93;
-}
-h1 {
-    color: #6c6c93;
-    text-align: center;
-    font-family: Monospace;
-	font-size: 60px;
-    text-transform: uppercase;
-    margin-top: 60px;
-}
-
-h2 {
-	color: #a8a8bd;
-    text-align: center;
-    position: static;
-    font-family: Monospace;
-	font-size: 30px;
-}
-h3 {
-	color: lightgrey;
-    text-align: left;
-    font-family: DejaVu Sans Mono, monospace;
-}
-h4 {
-	color: lightgrey;
-}
-h5 {
-	color: lightgrey;
-}
-p {
-	color: black;
-    font-family: Courier New;
-    font-size: px15;
-    text-align: left;
-    margin-left: 140px
-}
-p2 {
-	color: black;
-    font-family: Courier New;
-    font-size: px20;
-    text-align: left;
-}
 /*
 actions
 */
+
 .change .bar1 {
-    -webkit-transform: translate(0px, 20px);
-    transform: translate(0px, 20px);
+    -webkit-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
 }
 
 .change .bar2 {
-	-webkit-transform: translate(0px, 70px);
-    transform: translate(0px, 70px);
+	-webkit-transform: translate(0px 50px);
+    transform: translate(0px, 50px);
 } 
 
 .change .bar3 {
-    -webkit-transform: translate(0px, 120px);
-    transform: translate(0px, 120px);
+    -webkit-transform: translate(0px, 80px);
+    transform: translate(0px, 80px);
 }
 .change .link1 {
-	-webkit-opacity:0.5;
-    opacity:0.5;
-    -webkit-transform: translate(0px, 50px);
-    transform: translate(0px, 50px);
+	-webkit-opacity:0.6;
+    opacity:0.6;
+    -webkit-transform: translate(0px, 30px);
+    transform: translate(0px, 30px);
     pointer-events: all;
     
 }
 .change .link2 {
-	-webkit-opacity:0.5;
-    opacity:0.5;
-    -webkit-transform: translate(0px, 100px);
-    transform: translate(0px, 100px);
+	-webkit-opacity:0.6;
+    opacity:0.6;
+    -webkit-transform: translate(0px, 65px);
+    transform: translate(0px, 65px);
     pointer-events: all;
     
 }
 .change .link3 {
-	-webkit-opacity:0.5;
-    opacity:0.5;
-    -webkit-transform: translate(0px, 150px);
-    transform: translate(0px, 150px);    
+	-webkit-opacity:0.6;
+    opacity:0.6;
+    -webkit-transform: translate(0px, 95px);
+    transform: translate(0px, 95px);    
     pointer-events: all;
 }
 .arrow .belownav:hover{
@@ -286,72 +329,79 @@ actions
 }
 .fade:hover {
 	opacity: 1;
-    transition: 0.8s;
+    transition: 0.7s;
     
 </style>
 
-<!-- 
+<!------------------------------------------
 ****
 EINDE CSS 
 ****
--->
+--------------------------------------------->
 
-<title>Portfolio Thomas Bosma </title>
+<title> Portfolio Thomas Bosma </title>
 	<link rel="icon" href="https://drive.google.com/uc?id=1FyK94DMayaFZfI-		L1F8feJ1PQM03VTsT">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
 
 <!-- 
 BODY
 -->
 
+<body>
+
 
 <div class="topnav">
-
+	
 	<div class="taal">
+    
   <a  class="taal" href="file:///D:/Portfolio%20website/index-en.html">EN </a>
     
   <a class="taal" href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
+  
   </div>
   
 
+	<a href="#overmij" style=margin-right:50px;> Over Mij / Contact</a>
+  <a  href="#vrijetijd">Vrije Tijd</a>
+  <a href="#school">School</a>
 
-  <a style=margin-right:50px; href="#vrijetijd">|Vrije Tijd</a>
-  <a href="#school">|School</a>
-  <a href="#overmij">|Over Mij</a>
-  
-
+ 
 </div>
 
 <!-- 
 HOOFDPAGINA
 -->
-	
+    <div id=triangle-topleft> </div>
+ 
+   	<div class="TB">
+		
+        <h1>Thomas Bosma</h1>
+		<h2>Portfolio</h2> 
+  	
 
-	<div class="TB">
-		<h1 class="TB" >Thomas Bosma </h1>
-		<div > <h2> Portfolio </h2> </div>
-  	</div>
+	 	 <div class="linkmenu">
 
-<div class="linkmenu">
-	<ul class="bars" onclick="Schuif(this)">
 
-    <div class="bar1"></div>
-  		<div>
+			<ul class="bars" onclick="Schuif(this)">
+
+    		<div class="bar1"></div>
+  			
+        <div>
         	
         	<h3 class="link link1 fade"><a style=text-decoration:none;color:white;font-size:25px;					
-            href="#overmij">>Over mij</a> </h3>
+            href="#school">>School</a> </h3>
         	</div>
-  	<div class="bar2"></div>
-  		<div>
-        	<h3 class="link link2 fade"> <a style=text-decoration:none;color:white;font-size:25px				href="#school">>School</a> </h3></div>
-  	<div class="bar3"></div>
-  		<div>
-        <h3 class="link link3 fade"> <a style=text-decoration:none;color:white;font-size:25px				 		href="#vrijetijd">>Vrije tijd</a> </h3></div>
+  		<div class="bar2"></div>
+  			<div>
+        	<h3 class="link link2 fade"> <a style=text-decoration:none;color:white;font-size:25px					href="#vrijetijd">>Vrije tijd</a> </h3></div>
+  		<div class="bar3"></div>
+  			<div>
+        	<h3 class="link link3 fade"> <a style=text-decoration:none;color:white;font-size:25px				 			href="#overmij">>Overmij</a> </h3></div>
        
-	</ul>
+		</ul>
 
+	</div>
 </div>
 
 <script>
@@ -360,52 +410,60 @@ HOOFDPAGINA
 }	
 </script>
 
-<!-- 
-OVER MIJ
--->
-<div class=overmijkop>
-	<img class="logo" border=0 src="https://drive.google.com/uc?				id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT" width= "200" height= "200" >
-<h3> <div id="overmij" class="overmij"> Over Mij </div> </h3> 
-<div class=colorboxovermij>
-	<p class=" textovermij">Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 	oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala 	(in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de 			richting Natuur en Techniek.</p>
-	<p class=" textovermij">
-	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik 		met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik 		het leuk om verschillende dingen op de computer te doen zoals games 		spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze 		site maken. </p>
+	<div id=triangle-bottomright> </div>
 
 
+<div class="barprojecten"> <div>
 
-	<p class=" textovermij">Voor de komende projecten, zowel voor projecten 	van school als in mijn vrije tijd, zou ik graag beter willen worden in 		tekenen op papier en op de computer. Ook zou ik beter willen worden in 		verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het 		progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil 	ik een kleine game en animatie maken. </p></div>
-</div>
 <!--
 SCHOOL
 -->
+<div class="inhoud">
 
-<h3> <div id="school" class="school"> School </div> </h3>
+<h2> <div id="school" class="inhoudh2"> School </div> </h2>
+
+<div class=inhoudbox>
+
 <h3>Klas 1: Kinderboerderij Schuylenburgh</h3>
+
 	<p>Dit was een van de eerste O en O opdrachten die ik kreeg op school, ik werd geplaatst in een groepje. We moesten van de kleine kinderboerderij naast de Schuylenburgh een kinderspeelpark maken. Dit vond ik leuk omdat ik veel mocht schetsen en omdat je veel verschillende materialen mocht gebruiken om het prototype te maken.</p>
+    
 <h3>Klas 2: Belichting van het Simonsplein</h3>
 	<p>Voor dit project moesten we de huidige belichtingen van het Simonsplein in Doetinchem veranderen. Hier mocht ik ook weer heel wat voor schetsen en prototypes maken. Wij hebben dit project ook gewonnen en zijn door gegaan naar de regionale voorronde van de Technasium Top Award die we helaas niet hebben gewonnen.</p>
+    
 <h3>Klas 3: Dierenhulp APP</h3>
 	<p>De opdrachtgever vroeg ons om een app te maken, die het gemakkelijker en sneller zou maken om de dierenambulance in te lichten over een ongeluk met een dier. Dit was erg leuk omdat je zelf een app mocht ontwikkelen. Met het programma werken om de app te maken was erg interessant.</p>
+    
 <h3>Klas 4: Luciferprobleem</h3>
 	<p>Dit was de eerste opdracht in klas 4. De opdracht was om een alledaags probleem uit te kiezen en hiervoor een oplossing bedenken. Als groep kozen we het breken van lucifers. Een beter (niet opgelost) probleem vinden was erg lastig.</p>
+    
 <h3>Klas 4: Restwarmte</h3>
 	<p>Voor dit project moesten we zelf een opdrachtgever zoeken. Contour heeft ons de opdracht gegeven om verspilling van restwarmte uit datacenters tegen te gaan. Hiervoor hebben wij twee soorten oplossingen bedacht: de warmte en/of het water gebruiken, het warme water omzetten in energie met een peltier-element of ORC. Tijdens dit project hebben we ons meer gericht op technische opbouw dan de creatieve.</p>
+
+</div>
+</div>
+
+<div class="barprojecten"> <div>
 
 
 <!--
 VRIJE TIJD
 -->
 
+<div class="inhoud">
 
-<h3> <div id="vrijetijd" class="vrijetijd"> Vrije tijd </div> </h3>
+<h2> <div id="vrijetijd" class="inhoudh2"> Vrije tijd </div> </h2>
+
+<div class=inhoudbox>
+
 <h3>Tekeningen</h3>
 <h3>Lego </h3>
-<p2> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op 	Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
-</p2>
-<!-- 
-VIDEOS
--->
-<div> <h3> Video's </h3> </div>
+<p> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op 	Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
+</p>
+
+
+
+<h4> Video's </h4> 
 
 <iframe src="https://www.youtube.com/embed/KMauP4kRiEY" width="450"height="250" frameborder="0" allowfullscreen>
 </iframe>
@@ -415,34 +473,69 @@ VIDEOS
 </iframe>
 
 
-<!-- 
-LOGOLINKS
--->
 
-<div class=linklogos> 
-	<span class="caption">Links -> </span>
+
+
+	<div class=linklogos> 
 		<a href=" https://www.flickr.com/photos/141990353@N02/" 					target="_blank"><img border=0 src="https://drive.google.com/uc?				id=11IN4eB51P1-NUp5GDEe2HpWLRLIapMy7" 										style="width:70px;height:70px;border:0;"class= "fa fa-flickr"></a>
 	<span class="caption" style=font-size:13px;margin-top:-23px;>Flickr</span>
 
 	<a href=" https://www.instagram.com/bionic.t.b/ " target="_blank"><img 		border=0 src="https://drive.google.com/uc?id=1snBRsYCKdqOysngV0n3TAZT6lu-	lghVK" style="width:70px;height:70px;border:0;" class= "fa fa-insta"></a>
 	<span class="caption" style=font-size:13px;margin-top:-23px;>Instagram</span>
 
+	</div>
+
+</div>
+</div>
+
+<div class="barprojecten"> <div>
+
+
+<!-- 
+OVER MIJ
+
+contact
+-->
+<div class=inhoudovermij>
+	
+<h2> <div id="overmij" class="inhoudh2"> Over Mij </div> </h2> 
+
+<div class=inhoudbox>
+
+	<p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de richting Natuur en Techniek.</p>
+	<p>
+	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik het leuk om verschillende dingen op de computer te doen zoals games spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze site maken. </p>
+
+
+
+	<p>Voor de komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in 	tekenen op papier en op de computer. Ook zou ik beter willen worden in 	verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p></div>
+
+</div>
+
+<div class="inhoudcontact"> 
+<h2> <div class="inhoudkopcontact"> Contact </div>
+Contact </h2>
+
+<div class=inhoudboxcontact> 
+
+
+</div>
 </div>
 
 
 
 
-<h3>Overig</h3>
-
-
-
+<!-- 
+end
+-->
 
 <div class="belownav">
 
 <div class="arrow">
 <a class="belownav" href=#top>
-<div class="arrow"> <<< </div> Terug 
+<div class="arrow">  </div> Terug 
 </a>
+
 </div>
 
 <p style=font-size:12px;color:white;text-align:right;margin-top:60px;margin-right:30px;> &copy; 2018 T. Bosma</p>
