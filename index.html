@@ -63,7 +63,7 @@ p {
     font-family: Courier New;
     font-size: px15;
     text-align: left;
-    margin-left: 140px
+    margin-left: 60px;
 }
 .a {
 	align: center;
@@ -171,6 +171,16 @@ p {
     display: block;
     pointer-events: none;
 }
+#traingle-topright {
+	width: auto;
+	height: 0;
+	border-top: 500px solid #e6e6ff;
+	border-left: 1000px solid transparent;
+    position: relative;
+    z-index: -1;
+    margin: 0px;
+    padding: 0px;
+}
 #triangle-topleft {
 	width: auto;
 	height: 0;
@@ -179,6 +189,8 @@ p {
     margin: 0;
     position: relative;
     z-index: -1;
+    margin: 0px;
+    padding: 0px;
 }
 #triangle-bottomright {
 	width: auto;
@@ -190,8 +202,28 @@ p {
     z-index: -1;
     margin: 0px;
     padding: 0px;
-}			
-img {
+}
+#triangle-bottomleft {
+	width: auto;
+	height: 0;
+	border-top: 500px solid #e5ecff;
+	border-left: 1000px solid transparent;
+    top: -600px;
+    position: relative;
+    z-index: -1;
+    margin: 0px;
+    padding: 0px;
+}
+#box-bottomright {
+	top: -600px;
+	position: relative;
+	width: auto;
+    height: 900px;
+	background-color: #e5ecff;
+    
+}
+
+.img {
     max-width: 100%;
     height: auto;
     background-color: transparent;
@@ -236,25 +268,51 @@ inhoud
     background-color: #6e6e91;
     z-index: 2;
 }
-.inhoudbox {
-	position: relative;
-	background-color: #e5ecff;
-    height: 1000px;
+.inhoudboxschool {
+    position: relative;
     width: 100%;
-    align: center;
-    padding: 10px;
+	height: 0;
+	border-top: 500px solid #e6e6ff;
+	border-left: 900px solid transparent;
+    margin: 0;
+    justify-content: left;
+    position: relative;
+    z-index: 1;
+}
+.inhoudboxovermij {
+	position: relative;
+    width: 100%;
+	height: 0;
+	border-top: 600px solid #e6e6ff;
+	border-right: 800px solid transparent;
     margin-top: 200px;
-    z-index: -2;  	
+    padding: 10px;
+    z-index: -1;
+	
+}
+.inhoudtext {
+	position: absolute; 
+    padding-top: 50px;
+    z-index: 2;
 }
 .barprojecten {
 	width:100%;
-    height: 100px;
+    height: 10px;
     background-color: #373749;
    	position: relative;
     padding-bottom: 100px;
     
 
 }
+.fillerdarkblue {
+	width:100%;
+    height: 600px;
+    background-color: #373749;
+   	position: relative;
+    padding: 0;
+    margin: 0;
+}
+
 .linklogos {
 	text-align: center;
     background: transparent;
@@ -356,6 +414,7 @@ BODY
 
 <body>
 
+still work in progress, this is also my time building a site ever
 
 <div class="topnav">
 	
@@ -378,7 +437,7 @@ BODY
 <!-- 
 HOOFDPAGINA
 -->
-    <div id=triangle-topleft> </div>
+    <div id="triangle-topleft"> </div>
  
    	<div class="TB">
 		
@@ -416,19 +475,24 @@ HOOFDPAGINA
 }	
 </script>
 
-	<div id=triangle-bottomright> </div>
+	<div id="triangle-bottomright"> </div>
+    
+    <div id="box-bottomright"> </div>
 
-
-<div class="barprojecten"> <div>
+	<div id="triangle-bottomleft"> </div>
+    
+    <div id="triangle-topright"> </div>
+  
+<div class="barprojecten"> </div>
 
 <!--
 SCHOOL
 -->
 <div class="inhoud">
 
-<h2> <div id="school" class="inhoudh2"> School </div> </h2>
+<h2> <div id="school" class="inhoudh2"> School Projecten </div> </h2>
 
-<div class=inhoudbox>
+<div class=inhoudboxschool>
 
 <h3>Klas 1: Kinderboerderij Schuylenburgh</h3>
 
@@ -506,15 +570,16 @@ contact
 	
 <h2> <div id="overmij" class="inhoudh2"> Over Mij </div> </h2> 
 
-<div class=inhoudbox>
-
+<div class="inhoudboxovermij">
+	<div class="inhoudtext">
 	<p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de richting Natuur en Techniek.</p>
 	<p>
 	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik het leuk om verschillende dingen op de computer te doen zoals games spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze site maken. </p>
 
-
-
-	<p>Voor de komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in 	tekenen op papier en op de computer. Ook zou ik beter willen worden in 	verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p></div>
+	<p>Voor de komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in tekenen op papier en op de computer. Ook zou ik beter willen worden in verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p>
+    
+	</div>
+</div>
 
 </div>
 
