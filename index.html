@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!--
-no read, very much classified, such bad
--->
 <head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -15,15 +12,10 @@ no read, very much classified, such bad
   gtag('config', 'UA-124529132-1');
 </script>
 
-<!-- 
-BEGIN CSS
--->
-
+<!-----------------------
+Start CSS
+------------------------->
 <style>
-
-/*
-menus, kopjes, etc
-*/
 
 body {
 	margin: 0;
@@ -79,7 +71,7 @@ p {
     position: relative;
     
 }
-.taal a {
+.language a {
 	background-color: #6e6e91;
 	float: center right ;
     color: black;
@@ -121,7 +113,7 @@ p {
     color: white;
     transition: 0.4s;
 }
-.taal a:hover {
+.language a:hover {
 	background-color: white;
     color: black;
     transition: 0.5s;
@@ -171,15 +163,27 @@ p {
     display: block;
     pointer-events: none;
 }
-#traingle-topright {
+#triangle-topright {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #e6e6ff;
+	border-top: 500px solid #e5ecff;
 	border-left: 1000px solid transparent;
     position: relative;
     z-index: -1;
     margin: 0px;
     padding: 0px;
+    top: -600px;
+}
+#triangle-topright2 {
+	width: auto;
+	height: 0;
+	border-top: 500px solid #e5ecff;
+	border-left: 1000px solid transparent;
+    position: relative;
+    z-index: -1;
+    margin: 0px;
+    padding: 0px;
+    top: -1000px;
 }
 #triangle-topleft {
 	width: auto;
@@ -191,51 +195,91 @@ p {
     z-index: -1;
     margin: 0px;
     padding: 0px;
+    top: 0px;
+    
+}
+#triangle-topleft2 {
+	width: auto;
+	height: 0;
+	border-top: 500px solid #e6e6ff;
+	border-right: 1000px solid transparent;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+    margin: 0px;
+    padding: 0px;
+    top: -800px;
+    
 }
 #triangle-bottomright {
 	width: auto;
 	height: 0;
 	border-bottom: 500px solid #e5ecff;
 	border-left: 1000px solid transparent;
-    top: -600px;
     position: relative;
     z-index: -1;
     margin: 0px;
     padding: 0px;
+    top: -600px;
+}
+#triangle-bottomright2 {
+	width: auto;
+	height: 0;
+	border-bottom: 500px solid #e5ecff;
+	border-left: 1000px solid transparent;
+    position: relative;
+    z-index: -1;
+    margin: 0px;
+    padding: 0px;
+    top: -1000px;
 }
 #triangle-bottomleft {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #e5ecff;
-	border-left: 1000px solid transparent;
-    top: -600px;
+	border-bottom: 500px solid #e6e6ff;
+	border-right: 1000px solid transparent;
+    top: 0px;
     position: relative;
     z-index: -1;
     margin: 0px;
     padding: 0px;
+    top: -800px;
 }
-#box-bottomright {
-	top: -600px;
+#box1 {
 	position: relative;
 	width: auto;
-    height: 900px;
+    height: 200px;
 	background-color: #e5ecff;
-    
+    top: -600px;
 }
-
+#box2 {
+	position: relative;
+	width: auto;
+    height: 600px;
+	background-color: #e6e6ff;
+    top: -800px;
+}
+#box3 {
+	position: relative;
+	width: auto;
+    height: 600px;
+	background-color: #e5ecff;
+    top: -1000px;
+}
+#box4 {
+	position: relative;
+	width: auto;
+    height: 200px;
+	background-color: #e6e6ff;
+    margin-top: 300px;
+}
 .img {
     max-width: 100%;
     height: auto;
     background-color: transparent;
 }
 
-/*
-
-inhoud
-
-*/
-
-.inhoud {
+.indexschool {
 	display: flex;
     position: relative;
     align-items: top;
@@ -243,7 +287,7 @@ inhoud
     width: 100%;
     
 }
-.inhoudovermij {
+.indexvrijetijd {
 	display: flex;
     position: relative;
     align-items: top;
@@ -251,68 +295,82 @@ inhoud
     width: 100%;
     
 }
-.inhoudh2 {
+.indexovermij {
+    position: relative;
+    width: 100%;
+    top: -800px;
+    
+}
+.indexh2school {
 	position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	color: white;
-    text-align: center;
+	color: black;
+    text-align: left;
     font-family: Monospace;
     text-transform: uppercase;
-    width: 150px;
-    height: 400px;
-	font-size: 35px;
-    padding: 20px;
-    margin-left: 25px;
-    background-color: #6e6e91;
-    z-index: 2;
-}
-.inhoudboxschool {
-    position: relative;
-    width: 100%;
-	height: 0;
-	border-top: 500px solid #e6e6ff;
-	border-left: 900px solid transparent;
-    margin: 0;
-    justify-content: left;
-    position: relative;
+    width: 0px;
+    height: 0px;
+	font-size: 45px;
+    padding: 0px;
     z-index: 1;
+    top: -900px;
 }
-.inhoudboxovermij {
+.indexh2vrijetijd {
+    text-align: right;
+	position: relative;
+    color: black;
+    font-family: Monospace;
+    text-transform: uppercase;
+    width: 100%;
+    height: 0px;
+	font-size: 45px;
+    z-index: 1;
+    top: -1050px;
+}
+.indexh2overmij {
+	position: relative;
+	color: black;
+    text-align: left;
+    font-family: Monospace;
+    text-transform: uppercase;
+    width: 100%;
+    height: 0px;
+	font-size: 45px;
+    z-index: 1;
+    margin-top: 40px;
+}
+.indexboxschool {
 	position: relative;
     width: 100%;
 	height: 0;
-	border-top: 600px solid #e6e6ff;
-	border-right: 800px solid transparent;
-    margin-top: 200px;
-    padding: 10px;
-    z-index: -1;
-	
+    z-index: 1;
+    top: -800px;	
 }
-.inhoudtext {
+.indexboxvrijetijd {
+	position: relative;
+    width: 100%;
+	height: 0;
+    z-index: 1;
+    top: -800px;	
+}
+.indexboxovermij {
+	position: relative;
+    width: 100%;
+	height: 0;
+    z-index: 1;
+    margin-top: 100px;
+}
+.indextext {
 	position: absolute; 
     padding-top: 50px;
     z-index: 2;
 }
-.barprojecten {
-	width:100%;
-    height: 10px;
-    background-color: #373749;
-   	position: relative;
-    padding-bottom: 100px;
+.indexbarovermij {
+	position: relative;
+    width: 100%;
+    height: 7px;
+    background-color: black;
     
-
 }
-.fillerdarkblue {
-	width:100%;
-    height: 600px;
-    background-color: #373749;
-   	position: relative;
-    padding: 0;
-    margin: 0;
-}
-
 .linklogos {
 	text-align: center;
     background: transparent;
@@ -342,10 +400,6 @@ inhoud
 	background: transparent;
     color:white;
 }
-/*
-actions
-*/
-
 .change .bar1 {
     -webkit-transform: translate(0px, 15px);
     transform: translate(0px, 15px);
@@ -398,19 +452,14 @@ actions
 </style>
 
 <!------------------------------------------
-****
-EINDE CSS 
-****
+End CSS
 --------------------------------------------->
 
-<title> Portfolio Thomas Bosma </title>
+	<title> Portfolio Thomas Bosma </title>
 	<link rel="icon" href="https://drive.google.com/uc?id=1FyK94DMayaFZfI-		L1F8feJ1PQM03VTsT">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 
-<!-- 
-BODY
--->
+</head>
 
 <body>
 
@@ -418,25 +467,25 @@ still work in progress, this is also my first time building a site ever
 
 <div class="topnav">
 	
-	<div class="taal">
+	<div class="language">
     
-  <a  class="taal" href="file:///D:/Portfolio%20website/index-en.html">EN </a>
+  		<a  class="language" href="file:///D:/Portfolio%20website/index-en.html">EN </a>
     
-  <a class="taal" href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
+  		<a class="language" href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
   
   </div>
   
 
 	<a href="#overmij" style=margin-right:50px;> Over Mij / Contact</a>
-  <a  href="#vrijetijd">Vrije Tijd</a>
-  <a href="#school">School</a>
+  	<a  href="#vrijetijd">Vrije Tijd</a>
+ 	<a href="#school">School</a>
 
  
 </div>
 
-<!-- 
-HOOFDPAGINA
--->
+<!--------------------
+Homepage
+--------------------->
     <div id="triangle-topleft"> </div>
  
    	<div class="TB">
@@ -477,63 +526,101 @@ HOOFDPAGINA
 
 	<div id="triangle-bottomright"> </div>
     
-    <div id="box-bottomright"> </div>
+    <div id="box1"> </div>
 
-	<div id="triangle-bottomleft"> </div>
+	<div id="triangle-topright"> </div>
     
-    <div id="triangle-topright"> </div>
-  
-<div class="barprojecten"> </div>
+    
+<!---------------------------
+School
+--------------------------------------->
+    
+    <h2> <div id="school" class="indexh2school">|School |Projecten </div> </h2>
+    
+    <div id="triangle-bottomleft"> </div>
+    
+    <div id="box2"> </div>
 
+  	<div id="triangle-topleft2"> </div>
+    
+    
+<!------------------------
+Vrije Tijd
+------------------------------->
+	
+    <h2> <div id="vrijetijd" class="indexh2vrijetijd"> Vrije Tijd|</div> </h2>
+    
+       
+    <div id="triangle-bottomright2"> </div>
+    
+    <div id="box3"> </div>
+
+  	<div id="triangle-topright2"> </div>
+    
+
+<!---------------------------
+Over Mij
+---------------------------------------> 
+
+<div class="indexovermij">
+
+    <div class="indexbarovermij"></div>
+    
+    	<h2> <div id="overmij" class=indexh2overmij> |Over Mij </div> 
+        </h2>
+        
+        	<div class=indexboxovermij>
+        	<p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de richting Natuur en Techniek.</p>
+	<p>
+	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik het leuk om verschillende dingen op de computer te doen zoals games spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze site maken. </p>
+
+	<p>Voor de komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in tekenen op papier en op de computer. Ook zou ik beter willen worden in verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p>
+    	</div>
+        
+    <div id="box4"></div>
+    
+</div>   
+    
+    
+    
+    
 <!--
-SCHOOL
--->
 
 
-<h2> <div id="school"> School Projecten </div> </h2>
-
-
-<h3>Klas 1: Kinderboerderij Schuylenburgh</h3>
-
-	<p>Dit was een van de eerste O en O opdrachten die ik kreeg op school, ik werd geplaatst in een groepje. We moesten van de kleine kinderboerderij naast de Schuylenburgh een kinderspeelpark maken. Dit vond ik leuk omdat ik veel mocht schetsen en omdat je veel verschillende materialen mocht gebruiken om het prototype te maken.</p>
+	<h3>Klas 1: Kinderboerderij Schuylenburgh</h3>
+		<p>Dit was een van de eerste O en O opdrachten die ik kreeg op school, ik werd geplaatst in een groepje. We moesten van de kleine kinderboerderij naast de Schuylenburgh een kinderspeelpark maken. Dit vond ik leuk omdat ik veel mocht schetsen en omdat je veel verschillende materialen mocht gebruiken om het prototype te maken.</p>
     
-<h3>Klas 2: Belichting van het Simonsplein</h3>
-	<p>Voor dit project moesten we de huidige belichtingen van het Simonsplein in Doetinchem veranderen. Hier mocht ik ook weer heel wat voor schetsen en prototypes maken. Wij hebben dit project ook gewonnen en zijn door gegaan naar de regionale voorronde van de Technasium Top Award die we helaas niet hebben gewonnen.</p>
+	<h3>Klas 2: Belichting van het Simonsplein</h3>
+		<p>Voor dit project moesten we de huidige belichtingen van het Simonsplein in Doetinchem veranderen. Hier mocht ik ook weer heel wat voor schetsen en prototypes maken. Wij hebben dit project ook gewonnen en zijn door gegaan naar de regionale voorronde van de Technasium Top Award die we helaas niet hebben gewonnen.</p>
     
-<h3>Klas 3: Dierenhulp APP</h3>
-	<p>De opdrachtgever vroeg ons om een app te maken, die het gemakkelijker en sneller zou maken om de dierenambulance in te lichten over een ongeluk met een dier. Dit was erg leuk omdat je zelf een app mocht ontwikkelen. Met het programma werken om de app te maken was erg interessant.</p>
+	<h3>Klas 3: Dierenhulp APP</h3>
+		<p>De opdrachtgever vroeg ons om een app te maken, die het gemakkelijker en sneller zou maken om de dierenambulance in te lichten over een ongeluk met een dier. Dit was erg leuk omdat je zelf een app mocht ontwikkelen. Met het programma werken om de app te maken was erg interessant.</p>
     
-<h3>Klas 4: Luciferprobleem</h3>
-	<p>Dit was de eerste opdracht in klas 4. De opdracht was om een alledaags probleem uit te kiezen en hiervoor een oplossing bedenken. Als groep kozen we het breken van lucifers. Een beter (niet opgelost) probleem vinden was erg lastig.</p>
+	<h3>Klas 4: Luciferprobleem</h3>
+		<p>Dit was de eerste opdracht in klas 4. De opdracht was om een alledaags probleem uit te kiezen en hiervoor een oplossing bedenken. Als groep kozen we het breken van lucifers. Een beter (niet opgelost) probleem vinden was erg lastig.</p>
     
-<h3>Klas 4: Restwarmte</h3>
-	<p>Voor dit project moesten we zelf een opdrachtgever zoeken. Contour heeft ons de opdracht gegeven om verspilling van restwarmte uit datacenters tegen te gaan. Hiervoor hebben wij twee soorten oplossingen bedacht: de warmte en/of het water gebruiken, het warme water omzetten in energie met een peltier-element of ORC. Tijdens dit project hebben we ons meer gericht op technische opbouw dan de creatieve.</p>
-
-
-<!--
-VRIJE TIJD
--->
+	<h3>Klas 4: Restwarmte</h3>
+		<p>Voor dit project moesten we zelf een opdrachtgever zoeken. Contour heeft ons de opdracht gegeven om verspilling van restwarmte uit datacenters tegen te gaan. Hiervoor hebben wij twee soorten oplossingen bedacht: de warmte en/of het water gebruiken, het warme water omzetten in energie met een peltier-element of ORC. Tijdens dit project hebben we ons meer gericht op technische opbouw dan de creatieve.</p>
 
 
 
-<h2> <div id="vrijetijd"> Vrije tijd </div> </h2>
 
 
-<h3>Tekeningen</h3>
-<h3>Lego </h3>
-<p> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op 	Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
+	<h3>Tekeningen</h3>
+	<h3>Lego </h3>
+		<p> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op 	Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
 </p>
 
 
 
-<h4> Video's </h4> 
+	<h4> Video's </h4> 
 
-<iframe src="https://www.youtube.com/embed/KMauP4kRiEY" width="350"height="190" frameborder="0" allowfullscreen>
-</iframe>
-<iframe src="https://www.youtube.com/embed/MccTCcEi650" width="350"height="190"frameborder="0" allowfullscreen>
-</iframe>
-<iframe src="https://www.youtube.com/embed/EIqiVSHo6TM" width="350"height="190"frameborder="0" allowfullscreen>
-</iframe>
+		<iframe src="https://www.youtube.com/embed/KMauP4kRiEY" width="350"height="190" frameborder="0" allowfullscreen>
+		</iframe>
+		<iframe src="https://www.youtube.com/embed/MccTCcEi650" width="350"height="190"frameborder="0" allowfullscreen>
+		</iframe>
+		<iframe src="https://www.youtube.com/embed/EIqiVSHo6TM" width="350"height="190"frameborder="0" allowfullscreen>
+		</iframe>
 
 
 
@@ -547,20 +634,10 @@ VRIJE TIJD
 	<span class="caption" style=font-size:13px;margin-top:-23px;>Instagram</span>
 
 	</div>
-
-<!-- 
-OVER MIJ
-
-contact
--->
 	
-<h2> <div id="overmij"> Over Mij </div> </h2> 
+ 
 
-	<p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de richting Natuur en Techniek.</p>
-	<p>
-	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik het leuk om verschillende dingen op de computer te doen zoals games spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze site maken. </p>
-
-	<p>Voor de komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in tekenen op papier en op de computer. Ook zou ik beter willen worden in verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p>
+	
 
 
 <div class="inhoudcontact"> 
@@ -577,15 +654,11 @@ contact
 
 </div>
 
-
+-->
 
 
 <!-----------------------------------------------------
-
-----------
-End of page
------------
-
+Bottom of page
 ------------------------------------------------------>
 
 <div class="belownav">
