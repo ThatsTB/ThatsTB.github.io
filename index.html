@@ -26,29 +26,30 @@ h1 {
     color: white;
     text-align: center;
     font-family: Monospace;
-	font-size: 45px;
+	font-size: 60px;
     text-transform: uppercase;
     padding: 0px;
+    font-weight: 500;
 }
-
 h2 {
 	color: white;
     text-align: center;
     position: static;
-    font-family: Monospace;
-	font-size: 30px;
+    font-family: Courier New;
+	font-size: 40px;
     padding: 0px;
+    font-weight: 500;
 }
 h3 {
-	color: black;
-    text-align: left;
+	color: #3F3F53;
+    text-align: center;
     font-family: DejaVu Sans Mono, monospace;
 }
 h4 {
-	color: black;
+	color: #3F3F53;
 }
 h5 {
-	color: black;
+	color: #3F3F53;
 }
 p {
 	color: black;
@@ -60,19 +61,40 @@ p {
 .a {
 	align: center;
 }
+.img {
+    max-width: 100%;
+    height: auto;
+    background-color: transparent;
+}
 .topnav {
 	overflow: hidden;
-    background-color: #373749; 
+    background-color: #3F3F53; 
+    bottom: 0;  
 }
-.belownav {
+.bottomnav {
+	position: relative;
 	overflow: hidden;
-    background-color: #373749; 
-    bottom: 0;
-    position: relative;
-    
+    background-color: #3F3F53;   
+    height: 150px;
 }
-.language a {
-	background-color: #6e6e91;
+.nl a {
+	background:#8C8CFD; 
+    opacity: 0.9;
+	width: 40px;
+    float: center right;
+    color: black;
+    text-color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+    text-transform: uppercase;
+}
+.en a {
+	background:#8C8CFD; 
+    opacity: 0.9;
+    background-size: 75px 50px;
+    width: 40px;
 	float: center right ;
     color: black;
     text-color: grey;
@@ -91,39 +113,74 @@ p {
     font-size:17px;
     text-transform: uppercase;
 }
-.belownav a {
+.bottomnav a {
 	float: left;
+    height: 30px;
+    width: 130px;
     margin-left: 40px;
-    width: 100px;
+   	margin-top: 13px;
     margin-right: 60px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size:17px;
+    font-size: 20px;
     text-transform: uppercase;
+    
+}
+.email {
+    padding-top: 200px;     
+}
+.email a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+    text-transform: uppercase;
+    opacity: 0.6;   
+}
+.email a:hover {
+	opacity: 1;
+    transition: 0.2s; 
+    text-decoration: underline;
+    text-decoration-color: #8C8CFD;
+    text-underline-position: under;
 }
 .topnav a:hover {
 	background-color: white;
     color: #373749;
     transition: 0.4s;
 }
-.belownav a:hover {
-	background-color: #6e6e91;
-    color: white;
+.bottomnav a:hover {
+	background-color: white;
+    color: #373749;
     transition: 0.4s;
 }
-.language a:hover {
-	background-color: white;
-    color: black;
-    transition: 0.5s;
+.nl a:hover {
+	transition: 0.5s;
+	background: linear-gradient(to top, #002395, #002395 33.33%, white 33.33%, white 66.66%, #ed2939 66.66%);
+	opacity: 0.6;
+    color: black; 
+}
+.en a:hover {
+ 	transition: 0.5s;
+    background-image: url(https://www.crwflags.com/fotw/images/g/gb.gif);  
+    opacity: 0.6;
+    color: white;
+}
+a a.active {
+	opacity: 0.6;
+
+}
+a a:hover:not(.active) {
+ 	opacity: 0.6;
 }
 .TB {
     display: inline;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -390px;
+    top: -400px;
     width: 100%;
    
 }
@@ -131,7 +188,7 @@ p {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding-top: 30px;
+   padding-top: 0px;
    position: relative;
 }
 .bars {
@@ -146,17 +203,17 @@ p {
     background-color: #373749;
     margin-bottom: 10px;
     margin-top: 10px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .link {
-	background-color: #6e6e91;
+	background-color: #8C8CFD;
     text-decoration:solid;
     color: white;
 	border: 0;
 	position: center;
     text-align: center;
     opacity: 0;
-    transition: 0.6s;
+    transition: 0.2s;
     margin: auto;
     width: 200px; 
   	height: 40px;
@@ -238,12 +295,22 @@ p {
 	height: 0;
 	border-bottom: 500px solid #e6e6ff;
 	border-right: 1000px solid transparent;
-    top: 0px;
     position: relative;
     z-index: -1;
     margin: 0px;
     padding: 0px;
     top: -800px;
+}
+#triangle-contact {
+	width: auto;
+	height: 0;
+    left: 50%;
+    transform: translate(-50%); 
+    top: -140px;
+	border-left: 500px solid transparent;
+	border-right: 500px solid transparent;
+	border-top: 180px solid #e6e6ff;
+    position: absolute;     
 }
 #box1 {
 	position: relative;
@@ -273,37 +340,33 @@ p {
 	background-color: #e6e6ff;
     margin-top: 300px;
 }
-.img {
-    max-width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-
 .indexschool {
 	display: flex;
     position: relative;
     align-items: top;
     justify-content: center;
-    width: 100%;
-    
+    width: 100%;   
 }
 .indexvrijetijd {
 	display: flex;
     position: relative;
     align-items: top;
     justify-content: center;
-    width: 100%;
-    
+    width: 100%;    
 }
 .indexovermij {
     position: relative;
     width: 100%;
-    top: -800px;
-    
+    top: -800px;  
+}
+.indexcontact {
+    position: relative;
+    width: 100%;
+    top: -700px;  
 }
 .indexh2school {
 	position: relative;
-	color: black;
+	color: #3F3F53;
     text-align: left;
     font-family: Monospace;
     text-transform: uppercase;
@@ -313,11 +376,12 @@ p {
     padding: 0px;
     z-index: 1;
     top: -900px;
+    font-weight: 500;
 }
 .indexh2vrijetijd {
     text-align: right;
 	position: relative;
-    color: black;
+    color: #3F3F53;
     font-family: Monospace;
     text-transform: uppercase;
     width: 100%;
@@ -325,10 +389,11 @@ p {
 	font-size: 45px;
     z-index: 1;
     top: -1050px;
+    font-weight: 500;
 }
 .indexh2overmij {
 	position: relative;
-	color: black;
+	color: #3F3F53;
     text-align: left;
     font-family: Monospace;
     text-transform: uppercase;
@@ -337,6 +402,20 @@ p {
 	font-size: 45px;
     z-index: 1;
     margin-top: 40px;
+    font-weight: 500;
+}
+.indexh2contact {
+	position: relative;
+	color: #3F3F53;
+    text-align: center;
+    font-family: Monospace;
+    text-transform: uppercase;
+    width: 100%;
+    height: 0px;
+	font-size: 48px;
+    z-index: 1;
+    padding-top: 150px;
+    font-weight: 500;
 }
 .indexboxschool {
 	position: relative;
@@ -359,6 +438,21 @@ p {
     z-index: 1;
     margin-top: 100px;
 }
+.indexboxcontact {
+	position: relative;
+    text-align: center;
+    width: 300px;
+    height: 800px;
+    border-color: #8C8CFD;
+    border-top: transparent;
+    border-bottom: transparent;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 50% / 10%;
+    margin: auto;
+    z-index: 2;
+    top: -100px;
+}
 .indextext {
 	position: absolute; 
     padding-top: 50px;
@@ -367,9 +461,8 @@ p {
 .indexbarovermij {
 	position: relative;
     width: 100%;
-    height: 7px;
+    height: 9px;
     background-color: black;
-    
 }
 .linklogos {
 	text-align: center;
@@ -437,12 +530,8 @@ p {
     transform: translate(0px, 95px);    
     pointer-events: all;
 }
-.arrow .belownav:hover{
-    -webkit-transform: translate(10px, 10px);
-    transform: translate(10px, 10px); 
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    transition:0.5s;
+.top .bottomnav:hover{
+    transition: 0.5s;
     
 }
 .fade:hover {
@@ -466,19 +555,20 @@ End CSS
 still work in progress, this is also my first time building a site ever
 
 <div class="topnav">
-	
-	<div class="language">
-    
-  		<a  class="language" href="file:///D:/Portfolio%20website/index-en.html">EN </a>
-    
+
+    <div class="nl">
   		<a class="language" href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
   
   </div>
-  
-
-	<a href="#overmij" style=margin-right:50px;> Over Mij / Contact</a>
-  	<a  href="#vrijetijd">Vrije Tijd</a>
- 	<a href="#school">School</a>
+	
+	<div class="en">
+    
+  		<a  class="language" href="file:///D:/Portfolio%20website/index-en.html">EN </a>
+    </div>
+    
+	<a href="#overmij" style=margin-right:50px;><span style="color: #8C8CFD">|</span> Over Mij / Contact</a>
+  	<a  href="#vrijetijd"><span style="color: #8C8CFD">|</span> Vrije Tijd</a>
+ 	<a href="#school"><span style="color: #8C8CFD">|</span> School</a>
 
  
 </div>
@@ -535,7 +625,7 @@ Homepage
 School
 --------------------------------------->
     
-    <h2> <div id="school" class="indexh2school">|School |Projecten </div> </h2>
+    <h2> <div id="school" class="indexh2school"><span style="color: #8C8CFD">|</span>School <span style="color: #8C8CFD">|</span>Projecten </div> </h2>
     
     <div id="triangle-bottomleft"> </div>
     
@@ -548,7 +638,7 @@ School
 Vrije Tijd
 ------------------------------->
 	
-    <h2> <div id="vrijetijd" class="indexh2vrijetijd"> Vrije Tijd|</div> </h2>
+    <h2> <div id="vrijetijd" class="indexh2vrijetijd"> Vrije Tijd<span style="color: #8C8CFD">|</span></div> </h2>
     
        
     <div id="triangle-bottomright2"> </div>
@@ -566,10 +656,11 @@ Over Mij
 
     <div class="indexbarovermij"></div>
     
-    	<h2> <div id="overmij" class=indexh2overmij> |Over Mij </div> 
+    	<h2> <div id="overmij" class=indexh2overmij> <span style="color: #8C8CFD">|</span>Over Mij </div> 
         </h2>
         
-        	<div class=indexboxovermij>
+        	<div class="indexboxovermij">
+            
         	<p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de richting Natuur en Techniek.</p>
 	<p>
 	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik het leuk om verschillende dingen op de computer te doen zoals games spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze site maken. </p>
@@ -577,11 +668,26 @@ Over Mij
 	<p>Voor de komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in tekenen op papier en op de computer. Ook zou ik beter willen worden in verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p>
     	</div>
         
-    <div id="box4"></div>
+    <div id="box4"></div> 
     
 </div>   
-    
-    
+<!---------------------
+Contact
+---------------------->
+
+<div class="indexcontact">
+
+	<div id="triangle-contact"></div>
+
+    <h2> <div class="indexh2contact"> Contact
+    </div></h2>
+	
+    	<div class="indexboxcontact">
+        
+            	<div class="email"> <a href="mailto:thomas12bosma@gmail.com"> Email</a>
+        		</div>
+       </div>
+</div>  
     
     
 <!--
@@ -634,26 +740,6 @@ Over Mij
 	<span class="caption" style=font-size:13px;margin-top:-23px;>Instagram</span>
 
 	</div>
-	
- 
-
-	
-
-
-<div class="inhoudcontact"> 
-
-	<div class="inhoudkopcontact"> 
-		<h3> Contact </h3>
-	</div>
-
-	<div class=inhoudboxcontact> 
-
-
-	</div>
-
-
-</div>
-
 -->
 
 
@@ -661,16 +747,17 @@ Over Mij
 Bottom of page
 ------------------------------------------------------>
 
-<div class="belownav">
+<div class="bottomnav">
 
-	<div class="arrow">
-		<a class="belownav" href=#top>
-	<div class="arrow">  </div> Terug 
+	<div class="top">
+    
+		<a class="bottomnav" href=#top>
+	<div class="top">  </div> Naar boven
 		</a>
 
 	</div>
 
-	<p style=font-size:12px;color:white;text-align:right;margin-top:60px;margin-right:30px;> &copy; 2018 T. Bosma</p>
+	<p style="font-size:12px;color:white;text-align:right;margin-top:130px;margin-right:30px;"> &copy; 2018 T. Bosma </p>
 
 
 </div>
