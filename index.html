@@ -5,22 +5,42 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124529132-1"></script>
 <script>
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-124529132-1');
+  
 </script>
 
-<!-----------------------
-Start CSS
-------------------------->
+
+<!-- Start of CSS -->
+
 <style>
 
 body {
 	margin: 0;
 	font-family: monospace, Cavair Dreams, Arial, Helvetica, sans-serif;;
+}
+p {
+	color: black;
+    font-family: Courier New;
+    font-size: px15;
+    text-align: left;
+    margin-left: 60px;
+}
+.a {
+	align: center;
+}
+.img {
+    max-width: 100%;
+    height: auto;
     background-color: transparent;
+}
+div {
+	margin: 0px;
+    padding: 0px;
 }
 h1 {
     color: white;
@@ -41,9 +61,16 @@ h2 {
     font-weight: 500;
 }
 h3 {
-	color: #3F3F53;
-    text-align: center;
-    font-family: DejaVu Sans Mono, monospace;
+	position: relative;
+    color: white;
+    text-align: left;
+    font-family: Courier New;
+	font-size: 50px;
+    text-transform: uppercase;
+    padding: 0px;
+   	padding-left: 50px;
+    margin: 0px;
+    font-weight: 500;
 }
 h4 {
 	color: #3F3F53;
@@ -51,31 +78,19 @@ h4 {
 h5 {
 	color: #3F3F53;
 }
-p {
-	color: black;
-    font-family: Courier New;
-    font-size: px15;
-    text-align: left;
-    margin-left: 60px;
-}
-.a {
-	align: center;
-}
-.img {
-    max-width: 100%;
-    height: auto;
-    background-color: transparent;
-}
 .topnav {
+	width: 100%;
+	position: fixed;
 	overflow: hidden;
-    background-color: #3F3F53; 
-    bottom: 0;  
+    z-index: 999;
+    background-color: #4c4257; 
+    top: 0;  
 }
 .bottomnav {
-	position: relative;
 	overflow: hidden;
-    background-color: #3F3F53;   
-    height: 150px;
+    background-color: #4c4257;   
+    bottom: 0;
+    height: 100%;
 }
 .nl a {
 	background:#8C8CFD; 
@@ -120,7 +135,7 @@ p {
     margin-left: 40px;
    	margin-top: 13px;
     margin-right: 60px;
-    color: white;
+	color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -132,7 +147,7 @@ p {
     padding-top: 200px;     
 }
 .email a {
-    color: black;
+    color: white;
     text-align: center;
     text-decoration: none;
     font-size: 23px;
@@ -141,10 +156,10 @@ p {
 }
 .email a:hover {
 	opacity: 1;
-    transition: 0.2s; 
-    text-decoration: underline;
-    text-decoration-color: #8C8CFD;
-    text-underline-position: under;
+    transition: 0.1s; 
+    text-decoration: underline; 
+    text-decoration-color: #8C8CFD; 
+    text-underline-position: under; 
 }
 .topnav a:hover {
 	background-color: white;
@@ -175,7 +190,7 @@ a a.active {
 a a:hover:not(.active) {
  	opacity: 0.6;
 }
-.TB {
+.title {
     display: inline;
     justify-content: center;
     align-items: center;
@@ -200,14 +215,13 @@ a a:hover:not(.active) {
 .bar1, .bar2, .bar3 {
     width: 270px;
     height: 10px;
-    background-color: #373749;
+    background-color: #3F3F53;
     margin-bottom: 10px;
     margin-top: 10px;
     transition: 0.3s;
 }
 .link {
-	background-color: #8C8CFD;
-    text-decoration:solid;
+    text-decoration: solid;
     color: white;
 	border: 0;
 	position: center;
@@ -219,6 +233,28 @@ a a:hover:not(.active) {
   	height: 40px;
     display: block;
     pointer-events: none;
+    padding: 0;
+    z-index: 999;
+}
+.links {
+	text-decoration: none;
+	font-family: DejaVu Sans Mono, monospace;    
+	color: #4c4257;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-left: -50px;
+}
+.arrow {
+	text-decoration: none;
+	font-family: DejaVu Sans Mono, monospace;    
+	color: #4c4257;
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-left: -50px;
 }
 #triangle-topright {
 	width: auto;
@@ -229,7 +265,7 @@ a a:hover:not(.active) {
     z-index: -1;
     margin: 0px;
     padding: 0px;
-    top: -600px;
+    margin-bottom: -50px;
 }
 #triangle-topright2 {
 	width: auto;
@@ -240,7 +276,6 @@ a a:hover:not(.active) {
     z-index: -1;
     margin: 0px;
     padding: 0px;
-    top: -1000px;
 }
 #triangle-topleft {
 	width: auto;
@@ -252,8 +287,6 @@ a a:hover:not(.active) {
     z-index: -1;
     margin: 0px;
     padding: 0px;
-    top: 0px;
-    
 }
 #triangle-topleft2 {
 	width: auto;
@@ -265,8 +298,6 @@ a a:hover:not(.active) {
     z-index: -1;
     margin: 0px;
     padding: 0px;
-    top: -800px;
-    
 }
 #triangle-bottomright {
 	width: auto;
@@ -277,7 +308,7 @@ a a:hover:not(.active) {
     z-index: -1;
     margin: 0px;
     padding: 0px;
-    top: -600px;
+    margin-top: -600px;
 }
 #triangle-bottomright2 {
 	width: auto;
@@ -288,7 +319,6 @@ a a:hover:not(.active) {
     z-index: -1;
     margin: 0px;
     padding: 0px;
-    top: -1000px;
 }
 #triangle-bottomleft {
 	width: auto;
@@ -299,46 +329,51 @@ a a:hover:not(.active) {
     z-index: -1;
     margin: 0px;
     padding: 0px;
-    top: -800px;
 }
 #triangle-contact {
 	width: auto;
 	height: 0;
     left: 50%;
     transform: translate(-50%); 
-    top: -140px;
+    bottom: -150px;
 	border-left: 500px solid transparent;
 	border-right: 500px solid transparent;
 	border-top: 180px solid #e6e6ff;
-    position: absolute;     
+    position: absolute;
+    z-index: 1;
 }
 #box1 {
 	position: relative;
 	width: auto;
-    height: 200px;
+    height: 300px;
 	background-color: #e5ecff;
-    top: -600px;
 }
 #box2 {
 	position: relative;
 	width: auto;
-    height: 600px;
+    height: 800px;
 	background-color: #e6e6ff;
-    top: -800px;
 }
 #box3 {
 	position: relative;
 	width: auto;
-    height: 600px;
+    height: 800px;
 	background-color: #e5ecff;
-    top: -1000px;
 }
-#box4 {
+#box4overmij {
 	position: relative;
 	width: auto;
     height: 200px;
 	background-color: #e6e6ff;
-    margin-top: 300px;
+    margin-top: 250px;
+    z-index: 1;
+}
+.indexbarovermij {
+	position: relative;
+    width: 100%;
+    height: 9px;
+    background-color: #3F3F53;
+    z-index: 2;
 }
 .indexschool {
 	display: flex;
@@ -352,19 +387,19 @@ a a:hover:not(.active) {
     position: relative;
     align-items: top;
     justify-content: center;
-    width: 100%;    
+    width: 100%;  
 }
 .indexovermij {
-    position: relative;
-    width: 100%;
-    top: -800px;  
+    width: 100%;   
+	position: relative;
+    top: 100px;
 }
 .indexcontact {
-    position: relative;
-    width: 100%;
-    top: -700px;  
+    width: 100%; 
+    background-color: #4c4257;  
+    height: 1700px;
 }
-.indexh2school {
+.h2school {
 	position: relative;
 	color: #3F3F53;
     text-align: left;
@@ -374,11 +409,10 @@ a a:hover:not(.active) {
     height: 0px;
 	font-size: 45px;
     padding: 0px;
-    z-index: 1;
-    top: -900px;
     font-weight: 500;
+    margin-bottom: 120px;
 }
-.indexh2vrijetijd {
+.h2vrijetijd {
     text-align: right;
 	position: relative;
     color: #3F3F53;
@@ -387,11 +421,10 @@ a a:hover:not(.active) {
     width: 100%;
     height: 0px;
 	font-size: 45px;
-    z-index: 1;
-    top: -1050px;
     font-weight: 500;
+    margin-bottom: 70px;
 }
-.indexh2overmij {
+.h2overmij {
 	position: relative;
 	color: #3F3F53;
     text-align: left;
@@ -400,43 +433,39 @@ a a:hover:not(.active) {
     width: 100%;
     height: 0px;
 	font-size: 45px;
-    z-index: 1;
     margin-top: 40px;
     font-weight: 500;
 }
-.indexh2contact {
+.h2contact {
 	position: relative;
-	color: #3F3F53;
+	color: white;
     text-align: center;
     font-family: Monospace;
     text-transform: uppercase;
     width: 100%;
     height: 0px;
 	font-size: 48px;
-    z-index: 1;
-    padding-top: 150px;
+    padding-top: 350px;
     font-weight: 500;
 }
 .indexboxschool {
 	position: relative;
     width: 100%;
 	height: 0;
-    z-index: 1;
-    top: -800px;	
+    margin: 0px;
+    padding: 0px;
+    top: -800px; 
 }
 .indexboxvrijetijd {
 	position: relative;
     width: 100%;
 	height: 0;
-    z-index: 1;
-    top: -800px;	
 }
 .indexboxovermij {
 	position: relative;
     width: 100%;
 	height: 0;
-    z-index: 1;
-    margin-top: 100px;
+    top: 50px;
 }
 .indexboxcontact {
 	position: relative;
@@ -450,19 +479,7 @@ a a:hover:not(.active) {
     border-width: 6px;
     border-radius: 50% / 10%;
     margin: auto;
-    z-index: 2;
     top: -100px;
-}
-.indextext {
-	position: absolute; 
-    padding-top: 50px;
-    z-index: 2;
-}
-.indexbarovermij {
-	position: relative;
-    width: 100%;
-    height: 9px;
-    background-color: black;
 }
 .linklogos {
 	text-align: center;
@@ -472,7 +489,6 @@ a a:hover:not(.active) {
     vertical-align: top;
     display: inline-block;
 }
-
 .fa {
 	position: relative;
   	padding: 20px;
@@ -494,65 +510,57 @@ a a:hover:not(.active) {
     color:white;
 }
 .change .bar1 {
-    -webkit-transform: translate(0px, 15px);
-    transform: translate(0px, 15px);
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
 }
 
 .change .bar2 {
-	-webkit-transform: translate(0px 50px);
-    transform: translate(0px, 50px);
+	-webkit-transform: translate(0px 40px);
+    transform: translate(0px, 40px);
 } 
 
 .change .bar3 {
-    -webkit-transform: translate(0px, 80px);
-    transform: translate(0px, 80px);
+    -webkit-transform: translate(0px, 70px);
+    transform: translate(0px, 70px);
 }
 .change .link1 {
-	-webkit-opacity:0.6;
-    opacity:0.6;
-    -webkit-transform: translate(0px, 30px);
-    transform: translate(0px, 30px);
-    pointer-events: all;
-    
+	-webkit-opacity: 0.8;
+    opacity: 0.8;
+    -webkit-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    pointer-events: all;   
 }
 .change .link2 {
-	-webkit-opacity:0.6;
-    opacity:0.6;
-    -webkit-transform: translate(0px, 65px);
-    transform: translate(0px, 65px);
-    pointer-events: all;
-    
+	-webkit-opacity: 0.8;
+    opacity: 0.8;
+    -webkit-transform: translate(0px, 45px);
+    transform: translate(0px, 45px);
+    pointer-events: all;   
 }
 .change .link3 {
-	-webkit-opacity:0.6;
-    opacity:0.6;
-    -webkit-transform: translate(0px, 95px);
-    transform: translate(0px, 95px);    
+	-webkit-opacity: 0.8;
+    opacity: 0.8;
+    -webkit-transform: translate(0px, 75px);
+    transform: translate(0px, 75px);    
     pointer-events: all;
 }
-.top .bottomnav:hover{
-    transition: 0.5s;
-    
-}
-.fade:hover {
+.link1:hover, .link2:hover, .link3:hover {
 	opacity: 1;
-    transition: 0.7s;
-    
+}
+.arrow:hover {
+	color: red;
+}
 </style>
 
-<!------------------------------------------
-End CSS
---------------------------------------------->
+<!-- End of CSS -->
 
 	<title> Portfolio Thomas Bosma </title>
-	<link rel="icon" href="https://drive.google.com/uc?id=1FyK94DMayaFZfI-		L1F8feJ1PQM03VTsT">
+	<link rel="icon" href="https://drive.google.com/uc?id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-
-still work in progress, this is also my first time building a site ever
 
 <div class="topnav">
 
@@ -573,12 +581,11 @@ still work in progress, this is also my first time building a site ever
  
 </div>
 
-<!--------------------
-Homepage
---------------------->
+<!-- Home/toppage -->
+
     <div id="triangle-topleft"> </div>
  
-   	<div class="TB">
+   	<div class="title">
 		
         <h1>Thomas Bosma</h1>
 		<h2>Portfolio</h2> 
@@ -586,22 +593,40 @@ Homepage
 
 	 	 <div class="linkmenu">
 
-
 			<ul class="bars" onclick="Schuif(this)">
 
     		<div class="bar1"></div>
   			
         <div>
         	
-        	<h3 class="link link1 fade"><a style=text-decoration:none;color:white;font-size:25px;					
-            href="#school">>School</a> </h3>
-        	</div>
-  		<div class="bar2"></div>
-  			<div>
-        	<h3 class="link link2 fade"> <a style=text-decoration:none;color:white;font-size:25px					href="#vrijetijd">>Vrije tijd</a> </h3></div>
-  		<div class="bar3"></div>
-  			<div>
-        	<h3 class="link link3 fade"> <a style=text-decoration:none;color:white;font-size:25px				 			href="#overmij">>Overmij</a> </h3></div>
+        	<h3 class="link link1">
+            	<a class="links"href="#school">
+                    <span class="arrow">></span>
+                    School
+            	</a> 
+            </h3>
+        </div>
+        
+  			<div class="bar2"></div>
+            
+  		<div>
+        	<h3 class="link link2"> 
+            	<a class="links" href="#vrijetijd">
+                <span class="arrow">></span>
+                Vrije tijd
+                </a> 
+            </h3>
+        </div>
+  		
+        	<div class="bar3"></div>
+  		<div>
+        	<h3 class="link link3 hoverlink"> 
+            	<a class="links"href="#overmij">
+                <span class="arrow">></span>
+                Overmij
+                </a> 
+            </h3>
+        </div>
        
 		</ul>
 
@@ -618,27 +643,27 @@ Homepage
     
     <div id="box1"> </div>
 
-	<div id="triangle-topright"> </div>
+	<div id="triangle-topright"> </div>   
     
+<!-- School -->
     
-<!---------------------------
-School
---------------------------------------->
-    
-    <h2> <div id="school" class="indexh2school"><span style="color: #8C8CFD">|</span>School <span style="color: #8C8CFD">|</span>Projecten </div> </h2>
+    <h2> <div id="school" class="h2school"><span style="color: #8C8CFD">|</span>School <span style="color: #8C8CFD">|</span>Projecten </div> </h2>
     
     <div id="triangle-bottomleft"> </div>
     
-    <div id="box2"> </div>
+    <div id="box2"> 
+   
+    </div>
+   
+    	<div class="indexboxschool">
+        	<h3> Technasium </h3>
+    	</div>
+    
+  	<div id="triangle-topleft2"> </div>  
+    
+<!-- Vrije Tijd -->
 
-  	<div id="triangle-topleft2"> </div>
-    
-    
-<!------------------------
-Vrije Tijd
-------------------------------->
-	
-    <h2> <div id="vrijetijd" class="indexh2vrijetijd"> Vrije Tijd<span style="color: #8C8CFD">|</span></div> </h2>
+    <h2> <div id="vrijetijd" class="h2vrijetijd"> Vrije Tijd<span style="color: #8C8CFD">|</span></div> </h2>
     
        
     <div id="triangle-bottomright2"> </div>
@@ -647,78 +672,61 @@ Vrije Tijd
 
   	<div id="triangle-topright2"> </div>
     
-
-<!---------------------------
-Over Mij
----------------------------------------> 
+    
+<!-- Over Mij --> 
 
 <div class="indexovermij">
 
     <div class="indexbarovermij"></div>
     
-    	<h2> <div id="overmij" class=indexh2overmij> <span style="color: #8C8CFD">|</span>Over Mij </div> 
+    	<h2> <div id="overmij" class=h2overmij> <span style="color: #8C8CFD">|</span>Over Mij </div> 
         </h2>
         
         	<div class="indexboxovermij">
             
-        	<p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de richting Natuur en Techniek.</p>
+        	<p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5.</p>
 	<p>
 	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik het leuk om verschillende dingen op de computer te doen zoals games spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze site maken. </p>
 
 	<p>Voor de komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in tekenen op papier en op de computer. Ook zou ik beter willen worden in verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p>
     	</div>
         
-    <div id="box4"></div> 
-    
+    <div id="box4overmij"></div> 
+        
+    <div id="triangle-contact"></div>
+          
 </div>   
-<!---------------------
-Contact
----------------------->
+
+<!-- Contact -->
 
 <div class="indexcontact">
 
-	<div id="triangle-contact"></div>
-
-    <h2> <div class="indexh2contact"> Contact
+    <h2> <div class="h2contact"> Contact
     </div></h2>
 	
     	<div class="indexboxcontact">
         
-            	<div class="email"> <a href="mailto:thomas12bosma@gmail.com"> Email</a>
+            	<div class="email"> <a href="mailto:thomas12bosma@gmail.com" target="_blank"> Email</a>
+<script>
+	function{
+    	classList.toggle("show");
+}	
+</script>
         		</div>
        </div>
 </div>  
     
-    
-<!--
+<!-- Bottom of page -->
 
+<div class="bottomnav">
 
-	<h3>Klas 1: Kinderboerderij Schuylenburgh</h3>
-		<p>Dit was een van de eerste O en O opdrachten die ik kreeg op school, ik werd geplaatst in een groepje. We moesten van de kleine kinderboerderij naast de Schuylenburgh een kinderspeelpark maken. Dit vond ik leuk omdat ik veel mocht schetsen en omdat je veel verschillende materialen mocht gebruiken om het prototype te maken.</p>
-    
-	<h3>Klas 2: Belichting van het Simonsplein</h3>
-		<p>Voor dit project moesten we de huidige belichtingen van het Simonsplein in Doetinchem veranderen. Hier mocht ik ook weer heel wat voor schetsen en prototypes maken. Wij hebben dit project ook gewonnen en zijn door gegaan naar de regionale voorronde van de Technasium Top Award die we helaas niet hebben gewonnen.</p>
-    
-	<h3>Klas 3: Dierenhulp APP</h3>
-		<p>De opdrachtgever vroeg ons om een app te maken, die het gemakkelijker en sneller zou maken om de dierenambulance in te lichten over een ongeluk met een dier. Dit was erg leuk omdat je zelf een app mocht ontwikkelen. Met het programma werken om de app te maken was erg interessant.</p>
-    
-	<h3>Klas 4: Luciferprobleem</h3>
-		<p>Dit was de eerste opdracht in klas 4. De opdracht was om een alledaags probleem uit te kiezen en hiervoor een oplossing bedenken. Als groep kozen we het breken van lucifers. Een beter (niet opgelost) probleem vinden was erg lastig.</p>
-    
-	<h3>Klas 4: Restwarmte</h3>
-		<p>Voor dit project moesten we zelf een opdrachtgever zoeken. Contour heeft ons de opdracht gegeven om verspilling van restwarmte uit datacenters tegen te gaan. Hiervoor hebben wij twee soorten oplossingen bedacht: de warmte en/of het water gebruiken, het warme water omzetten in energie met een peltier-element of ORC. Tijdens dit project hebben we ons meer gericht op technische opbouw dan de creatieve.</p>
+	<p style="font-size:12px;color:white;text-align:right;margin-top:130px;margin-right:40px;margin-bottom:20px"> &copy; 2018 T. Bosma </p>
 
-
-
-
-
-	<h3>Tekeningen</h3>
-	<h3>Lego </h3>
-		<p> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op 	Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
-</p>
-
-
-
+</div>
+</body>
+</html>
+  
+ <!--
 	<h4> Video's </h4> 
 
 		<iframe src="https://www.youtube.com/embed/KMauP4kRiEY" width="350"height="190" frameborder="0" allowfullscreen>
@@ -742,30 +750,7 @@ Contact
 	</div>
 -->
 
-
-<!-----------------------------------------------------
-Bottom of page
------------------------------------------------------->
-
-<div class="bottomnav">
-
-	<div class="top">
-    
-		<a class="bottomnav" href=#top>
-	<div class="top">  </div> Naar boven
-		</a>
-
-	</div>
-
-	<p style="font-size:12px;color:white;text-align:right;margin-top:130px;margin-right:30px;"> &copy; 2018 T. Bosma </p>
+   
 
 
-</div>
-
-
-</body>
-</html>
-  
-    
-
-
+      
