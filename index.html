@@ -30,10 +30,10 @@ p {
     text-align: left;
     margin-left: 60px;
 }
-.a {
+a {
 	align: center;
 }
-.img {
+img {
     max-width: 100%;
     height: auto;
     background-color: transparent;
@@ -77,6 +77,9 @@ h4 {
 }
 h5 {
 	color: #3F3F53;
+}
+span {
+	color: #8C8CFD;
 }
 .topnav {
 	width: 100%;
@@ -140,26 +143,22 @@ h5 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
 }
 .email {
-    padding-top: 200px;     
+    padding-top: 200px; 
 }
 .email a {
     color: white;
     text-align: center;
-    text-decoration: none;
     font-size: 23px;
     text-transform: uppercase;
-    opacity: 0.6;   
-}
-.email a:hover {
-	opacity: 1;
-    transition: 0.1s; 
     text-decoration: underline; 
     text-decoration-color: #8C8CFD; 
     text-underline-position: under; 
+}
+.email a:hover {
+    text-decoration-color: red;
 }
 .topnav a:hover {
 	background-color: white;
@@ -240,7 +239,7 @@ a a:hover:not(.active) {
 	text-decoration: none;
 	font-family: DejaVu Sans Mono, monospace;    
 	color: #4c4257;
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -528,7 +527,7 @@ a a:hover:not(.active) {
     opacity: 0.8;
     -webkit-transform: translate(0px, 15px);
     transform: translate(0px, 15px);
-    pointer-events: all;   
+    pointer-events: all; 
 }
 .change .link2 {
 	-webkit-opacity: 0.8;
@@ -546,8 +545,9 @@ a a:hover:not(.active) {
 }
 .link1:hover, .link2:hover, .link3:hover {
 	opacity: 1;
+    color: black;
 }
-.arrow:hover {
+.links:hover .redeffect {
 	color: red;
 }
 </style>
@@ -567,18 +567,28 @@ a a:hover:not(.active) {
     <div class="nl">
   		<a class="language" href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
   
-  </div>
+    </div>
 	
 	<div class="en">
     
   		<a  class="language" href="file:///D:/Portfolio%20website/index-en.html">EN </a>
-    </div>
+</div>
     
-	<a href="#overmij" style=margin-right:50px;><span style="color: #8C8CFD">|</span> Over Mij / Contact</a>
-  	<a  href="#vrijetijd"><span style="color: #8C8CFD">|</span> Vrije Tijd</a>
- 	<a href="#school"><span style="color: #8C8CFD">|</span> School</a>
+	<a href="#overmij" class="links" style=margin-right:50px;>
+    	<span class="redeffect">|
+        </span> Over Mij / Contact
+    </a>
+    
+    <a  href="#vrijetijd" class="links">
+    	<span class="redeffect">|
+        </span> Vrije Tijd
+    </a>
+  
+ 	<a href="#school" class="links">
+    	<span class="redeffect">|
+        </span> School
+    </a>
 
- 
 </div>
 
 <!-- Home/toppage -->
@@ -601,7 +611,7 @@ a a:hover:not(.active) {
         	
         	<h3 class="link link1">
             	<a class="links"href="#school">
-                    <span class="arrow">></span>
+                    <span class="redeffect">></span>
                     School
             	</a> 
             </h3>
@@ -612,7 +622,7 @@ a a:hover:not(.active) {
   		<div>
         	<h3 class="link link2"> 
             	<a class="links" href="#vrijetijd">
-                <span class="arrow">></span>
+                <span class="redeffect">></span>
                 Vrije tijd
                 </a> 
             </h3>
@@ -622,7 +632,7 @@ a a:hover:not(.active) {
   		<div>
         	<h3 class="link link3 hoverlink"> 
             	<a class="links"href="#overmij">
-                <span class="arrow">></span>
+                <span class="redeffect">></span>
                 Overmij
                 </a> 
             </h3>
@@ -647,7 +657,12 @@ a a:hover:not(.active) {
     
 <!-- School -->
     
-    <h2> <div id="school" class="h2school"><span style="color: #8C8CFD">|</span>School <span style="color: #8C8CFD">|</span>Projecten </div> </h2>
+    <h2  class="links"> 
+    	<div id="school" class="h2school">
+        	<span class="redeffect">|</span>School 
+            <span class="redeffect">|</span>Projecten 
+        </div> 
+    </h2>
     
     <div id="triangle-bottomleft"> </div>
     
@@ -656,22 +671,24 @@ a a:hover:not(.active) {
     </div>
    
     	<div class="indexboxschool">
-        	<h3> Technasium </h3>
+        	<h3>  Technasium </h3>
     	</div>
     
   	<div id="triangle-topleft2"> </div>  
     
 <!-- Vrije Tijd -->
 
-    <h2> <div id="vrijetijd" class="h2vrijetijd"> Vrije Tijd<span style="color: #8C8CFD">|</span></div> </h2>
+    <h2 class="links"> 
+    	<div id="vrijetijd" class="h2vrijetijd"> 
+        	Vrije Tijd<span class="redeffect">|</span>
+        </div> 
+    </h2>
     
-       
     <div id="triangle-bottomright2"> </div>
     
     <div id="box3"> </div>
 
   	<div id="triangle-topright2"> </div>
-    
     
 <!-- Over Mij --> 
 
@@ -679,9 +696,12 @@ a a:hover:not(.active) {
 
     <div class="indexbarovermij"></div>
     
-    	<h2> <div id="overmij" class=h2overmij> <span style="color: #8C8CFD">|</span>Over Mij </div> 
+    	<h2 class="links">
+        	<div id="overmij" class=h2overmij>
+            	<span class="redeffect">|</span>Over Mij 
+            </div> 
         </h2>
-        
+
         	<div class="indexboxovermij">
             
         	<p>Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala (in Silvolde) in klas 5.</p>
@@ -705,14 +725,15 @@ a a:hover:not(.active) {
     </div></h2>
 	
     	<div class="indexboxcontact">
-        
-            	<div class="email"> <a href="mailto:thomas12bosma@gmail.com" target="_blank"> Email</a>
+        	<div class="email"> 
+                <a href="mailto:thomas12bosma@gmail.com" target="_blank"> Email
+                </a>
 <script>
 	function{
     	classList.toggle("show");
 }	
 </script>
-        		</div>
+        	</div>
        </div>
 </div>  
     
@@ -753,4 +774,3 @@ a a:hover:not(.active) {
    
 
 
-      
