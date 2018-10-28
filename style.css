@@ -25,17 +25,17 @@ h1 {
     color: white;
     text-align: center;
     font-family: Monospace;
-	font-size: 60px;
+	  font-size: 60px;
     text-transform: uppercase;
     padding: 0px;
     font-weight: 500;
 }
 h2 {
-	color: white;
+	  color: white;
     text-align: center;
     position: static;
     font-family: Courier New;
-	font-size: 40px;
+	  font-size: 40px;
     padding: 0px;
     font-weight: 500;
 }
@@ -358,10 +358,10 @@ a a:hover:not(.active) {
 	background-color: #e6e6ff;
     z-index: 1;
 }
-.indexbarovermij {
+.barovermij {
 	position: relative;
     width: 100%;
-    height: 9px;
+    height: 12px;
     background-color: #3F3F53;
     z-index: 2;
 
