@@ -5,5 +5,5 @@
 I don't know how you got here, 
 but this is the repository for my portfolio site
 
-Eventual site:https://thatstb.github.io/
+Eventual site: https://thatstb.github.io/
 
