@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+BEGIN CSS
+-->
+
+<style>
+
+/*
+menus, kopjes, etc
+*/
+
+body {
+	font-family: Cavair Dreams;
+    background-color:white;
+
+    /*background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOwry4x6XOJXvag-a5CqSxf1h4Ydz1hhuuotPg6Ll0ARwWdnK");
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-size:100px;100px;
+    */
+}
+.parallax {
+    background-image: url("https://drive.google.com/uc?id=1JrdZF1Y4fPG9VAShQi8u-3bSJgmuIoJ0");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.linkmenu {
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+   margin: auto;
+}
+.bars {
+    display: block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 270px;
+    height: 10px;
+    background-color: #373749;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+.link {
+	background-color: #6e6e91;
+    text-decoration:solid;
+    color: white;
+	border: 0;
+	position: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.70s;
+    margin: auto;
+    width: 200px;
+  	height: 40px;
+    display: block;
+    pointer-events: none;
+}
+.pijl {
+	padding: 30px;
+    color: black;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.overmijkop {
+	background-color: white;
+    padding-top: 1000px;
+}
+.colorboxovermij {
+	background-color: #f0f0f4;
+    width: 100%;
+    align: center;
+    padding: 10px;
+}
+.textovermij {
+	width: 1000px;
+   	margin-left: 220px;
+}
+.overmij {
+	color: white;
+    text-align: center;
+    font-family: Courier New;
+    width: 180px;
+    height: 60px;
+    margin-bottom: -40px;
+	font-size: 25px;
+    margin-left: 220px;
+    background-color: #6e6e91;
+}
+.logo {
+	padding-top: 0px;
+    margin-left:0px;
+    margin-bottom: -150px;
+    position: static;
+    z-index: 999;
+    width:220px;
+    height:220px;
+}
+.linklogos {
+	text-align:center;
+    background: white;
+    position:static;
+	width: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+.caption {
+	display: block;
+}
+.a {
+	align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-flickr {
+	background: white;
+    color: white;
+}
+.fa-insta {
+	background: white;
+    color:white;
+}
+h1 {
+    color: grey;
+    text-align: center;
+    font-family: Monospace;
+	font-size: 60px;
+    text-transform: uppercase;
+}
+
+h2 {
+	color: #a8a8bd;
+    text-align: center;
+    position: static;
+    font-family: Monospace;
+	font-size: 40px;
+}
+h3 {
+	color: lightgrey;
+    text-align: left;
+    font-family: DejaVu Sans Mono, monospace	;
+}
+h4 {
+	color: lightgrey;
+}
+h5 {
+	color:lightgrey;
+}
+p {
+	color: black;
+    font-family: Courier New;
+    font-size: px15;
+    text-align: left;
+    margin-left: 140px
+}
+p2 {
+	color: black;
+    font-family: Courier New;
+    font-size: px20;
+    text-align: left;
+}
+/*
+actions
+*/
+.change .bar1 {
+    -webkit-transform: translate(0px, 20px);
+    transform: translate(0px, 20px);
+}
+
+.change .bar2 {
+	-webkit-transform: translate(0px, 70px);
+    transform: translate(0px, 70px);
+}
+
+.change .bar3 {
+    -webkit-transform: translate(0px, 120px);
+    transform: translate(0px, 120px);
+}
+.change .link1 {
+	-webkit-opacity:0.5;
+    opacity:0.5;
+    -webkit-transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
+    pointer-events: all;
+
+}
+.change .link2 {
+	-webkit-opacity:0.5;
+    opacity:0.5;
+    -webkit-transform: translate(0px, 100px);
+    transform: translate(0px, 100px);
+    pointer-events: all;
+
+}
+.change .link3 {
+	-webkit-opacity:0.5;
+    opacity:0.5;
+    -webkit-transform: translate(0px, 150px);
+    transform: translate(0px, 150px);
+    pointer-events: all;
+}
+.fade:hover {
+	opacity: 1;
+    transition: 0.8s;
+
+</style>
+
+<!--
+****
+EINDE CSS
+****
+-->
+
+<title>Portfolio Thomas Bosma </title>
+	<link rel="icon" href="https://drive.google.com/uc?id=1FyK94DMayaFZfI-		L1F8feJ1PQM03VTsT">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<a href="file:///D:/Portfolio%20website/index-en.html">EN</a>
+<a href="file:///D:/Portfolio%20website/index-nl.html">NL</a>
+
+<!--
+HOOFDPAGINA
+-->
+		<h1 style=color:#6c6c93;>TB</h1>
+		<div> <h2> Portfolio </h2> </div>
+
+<!--
+PAGINA LINKS
+-->
+
+<div class="linkmenu">
+
+	<ul class="bars" onclick="Schuif(this)">
+
+    <div class="bar1"></div>
+  		<div>
+
+        	<h3 class="link link1 fade"><a style=text-decoration:none;color:white;font-size:25px;
+            href="#overmij">>Over mij</a> </h3>
+        	</div>
+  	<div class="bar2"></div>
+  		<div>
+        	<h3 class="link link2 fade"> <a style=text-decoration:none;color:white;font-size:25px				href="#school">>School</a> </h3></div>
+  	<div class="bar3"></div>
+  		<div>
+        <h3 class="link link3 fade"> <a style=text-decoration:none;color:white;font-size:25px				 		href="#vrijetijd">>Vrije tijd</a> </h3></div>
+
+	</ul>
+
+</div>
+
+<script>
+	function Schuif(x) {
+    	x.classList.toggle("change");
+}
+</script>
+
+<!--
+OVER MIJ
+-->
+<div class=overmijkop>
+	<img class="logo" border=0 src="https://drive.google.com/uc?				id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT" width= "200" height= "200" >
+<h3> <div id="overmij" class="overmij"> Over Mij </div> </h3>
+<div class=colorboxovermij>
+	<p class=" textovermij">Hallo lezer! Ik ben Thomas Bosma en ik ben op 26 	oktober 2001 in Utrecht geboren. Ik zit nu op het Almende College Isala 	(in Silvolde) in klas 5. Vorig schooljaar ben ik begonnen met de 			richting Natuur en Techniek.</p>
+	<p class=" textovermij">
+	In mijn vrije tijd speel ik <b>Hockey</b>, <b>teken</b> ik, 'bouw' ik 		met <b>Lego</b> en zet ook wel eens model kits in elkaar. Ook vindt ik 		het leuk om verschillende dingen op de computer te doen zoals games 		spelen, video's kijken en wat heel wat dingen uitproberen, zoals deze 		site maken. </p>
+
+
+
+	<p class=" textovermij">Voor de komende projecten, zowel voor projecten 	van school als in mijn vrije tijd, zou ik graag beter willen worden in 		tekenen op papier en op de computer. Ook zou ik beter willen worden in 		verslagen schrijven. <b>HTML</b> en <b>CSS</b> leren stond ook op het 		progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil 	ik een kleine game en animatie maken. </p></div>
+</div>
+<!--
+SCHOOL
+-->
+
+<h3> <div id="school" class="school"> School </div> </h3>
+<h3>Klas 1: Kinderboerderij Schuylenburgh</h3>
+	<p>Dit was een van de eerste O en O opdrachten die ik kreeg op school, ik werd geplaatst in een groepje. We moesten van de kleine kinderboerderij naast de Schuylenburgh een kinderspeelpark maken. Dit vond ik leuk omdat ik veel mocht schetsen en omdat je veel verschillende materialen mocht gebruiken om het prototype te maken.</p>
+<h3>Klas 2: Belichting van het Simonsplein</h3>
+	<p>Voor dit project moesten we de huidige belichtingen van het Simonsplein in Doetinchem veranderen. Hier mocht ik ook weer heel wat voor schetsen en prototypes maken. Wij hebben dit project ook gewonnen en zijn door gegaan naar de regionale voorronde van de Technasium Top Award die we helaas niet hebben gewonnen.</p>
+<h3>Klas 3: Dierenhulp APP</h3>
+	<p>De opdrachtgever vroeg ons om een app te maken, die het gemakkelijker en sneller zou maken om de dierenambulance in te lichten over een ongeluk met een dier. Dit was erg leuk omdat je zelf een app mocht ontwikkelen. Met het programma werken om de app te maken was erg interessant.</p>
+<h3>Klas 4: Luciferprobleem</h3>
+	<p>Dit was de eerste opdracht in klas 4. De opdracht was om een alledaags probleem uit te kiezen en hiervoor een oplossing bedenken. Als groep kozen we het breken van lucifers. Een beter (niet opgelost) probleem vinden was erg lastig.</p>
+<h3>Klas 4: Restwarmte</h3>
+	<p>Voor dit project moesten we zelf een opdrachtgever zoeken. Contour heeft ons de opdracht gegeven om verspilling van restwarmte uit datacenters tegen te gaan. Hiervoor hebben wij twee soorten oplossingen bedacht: de warmte en/of het water gebruiken, het warme water omzetten in energie met een peltier-element of ORC. Tijdens dit project hebben we ons meer gericht op technische opbouw dan de creatieve.</p>
+
+
+<!--
+VRIJE TIJD
+-->
+
+
+<h3> <div id="vrijetijd" class="vrijetijd"> Vrije tijd </div> </h3>
+<h3>Tekeningen</h3>
+<h3>Lego </h3>
+<p2> Vanaf klas 1 ben ik begonnen met Lego creaties te gaan delen op 	Social Media met andere bouwers. Ondertussen heb ik meer volgers gekregen en zijn er al een paar video's over mijn creaties gemaakt.
+</p2>
+<!--
+VIDEOS
+-->
+<div> <h3> Video's </h3> </div>
+
+<iframe src="https://www.youtube.com/embed/KMauP4kRiEY" width="450"height="250" frameborder="0" allowfullscreen>
+</iframe>
+<iframe src="https://www.youtube.com/embed/MccTCcEi650" width="450"height="250"frameborder="0" allowfullscreen>
+</iframe>
+<iframe src="https://www.youtube.com/embed/EIqiVSHo6TM" width="450"height="250"frameborder="0" allowfullscreen>
+</iframe>
+
+
+<!--
+LOGOLINKS
+-->
+
+<div class=linklogos>
+	<span class="caption">Links -> </span>
+		<a href=" https://www.flickr.com/photos/141990353@N02/" 					target="_blank"><img border=0 src="https://drive.google.com/uc?				id=11IN4eB51P1-NUp5GDEe2HpWLRLIapMy7" 										style="width:70px;height:70px;border:0;"class= "fa fa-flickr"></a>
+	<span class="caption" style=font-size:13px;margin-top:-23px;>Flickr</span>
+
+	<a href=" https://www.instagram.com/bionic.t.b/ " target="_blank"><img 		border=0 src="https://drive.google.com/uc?id=1snBRsYCKdqOysngV0n3TAZT6lu-	lghVK" style="width:70px;height:70px;border:0;" class= "fa fa-insta"></a>
+	<span class="caption" style=font-size:13px;margin-top:-23px;>Instagram</span>
+
+</div>
+
+
+
+
+<h3>Overig</h3>
+
+
+
+
+
+<p style=font-size:10px;>2018-2018 Thomas Bosma</p>EN
+
+
+
+
+</body>
+</html>
