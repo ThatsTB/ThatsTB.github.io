@@ -1,55 +1,53 @@
 body {
 	margin: 0;
-	font-family: monospace, Cavair Dreams, Arial, Helvetica, sans-serif;;
+	font-family:  Courier New
 }
 p {
 	color: black;
-    font-family: Courier New;
-    font-size: px15;
-    text-align: left;
-    margin-left: 60px;
+  font-family: Courier;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 60px;
 }
 a {
 	align: center;
 }
 img {
-    max-width: 100%;
-    height: auto;
-    background-color: transparent;
+  max-width: 100%;
+  height: auto;
+  background-color: transparent;
 }
 div {
 	margin: 0px;
-    padding: 0px;
+  padding: 0px;
 }
 h1 {
-    color: white;
-    text-align: center;
-    font-family: Monospace;
-	  font-size: 60px;
-    text-transform: uppercase;
-    padding: 0px;
-    font-weight: 500;
+  color: white;
+  text-align: center;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 0px;
+  font-weight: 500;
 }
 h2 {
-	  color: white;
-    text-align: center;
-    position: static;
-    font-family: Courier New;
-	  font-size: 40px;
-    padding: 0px;
-    font-weight: 500;
+	color: white;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
 }
 h3 {
 	position: relative;
-    color: white;
-    text-align: left;
-    font-family: Courier New;
-	font-size: 50px;
-    text-transform: uppercase;
-    padding: 0px;
-   	padding-left: 50px;
-    margin: 0px;
-    font-weight: 500;
+  color: white;
+  text-align: left;
+  font-family: Courier New;
+	font-size: 20px;
+  text-transform: uppercase;
+  padding: 0px;
+  padding-left: 50px;
+  margin: 0px;
+  font-weight: 500;
 }
 h4 {
 	color: #3F3F53;
@@ -61,44 +59,39 @@ span {
 	color: #8C8CFD;
 }
 .topnav {
-	width: 100%;
-	position: fixed;
-	overflow: hidden;
+		width: 100%;
+		position: fixed;
+		overflow: hidden;
     z-index: 1000;
-    background-color: #4c4257;
+    background-color: #3F3F53;
     top: 0;
 }
 .bottomnav {
-	overflow: hidden;
-    background-color: #4c4257;
+ 		overflow: hidden;
+    background-color: #3F3F53;
     bottom: 0;
-    height: 100%;
 }
 .nl a {
-	background:#8C8CFD;
-    opacity: 0.9;
-	width: 40px;
+	  background:#8C8CFD;
+	  width: 40px;
     float: center right;
     color: black;
     text-color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size:17px;
     text-transform: uppercase;
 }
 .en a {
 	background:#8C8CFD;
-    opacity: 0.9;
     background-size: 75px 50px;
     width: 40px;
-	float: center right ;
+	  float: center right ;
     color: black;
     text-color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size:17px;
     text-transform: uppercase;
 }
 .topnav a {
@@ -107,7 +100,7 @@ span {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size:17px;
+    font-size: 17px;
     text-transform: uppercase;
 }
 .bottomnav a {
@@ -175,7 +168,6 @@ a a:hover:not(.active) {
     position: relative;
     top: -400px;
     width: 100%;
-
 }
 .linkmenu {
    display: flex;
@@ -189,7 +181,6 @@ a a:hover:not(.active) {
     cursor: pointer;
     padding: 0;
 }
-
 .bar1, .bar2, .bar3 {
     width: 270px;
     height: 10px;
@@ -199,30 +190,30 @@ a a:hover:not(.active) {
     transition: 0.3s;
 }
 .link {
-    text-decoration: solid;
-    color: white;
-	border: 0;
+  text-decoration: solid;
+  color: white;
+ 	border: 0;
 	position: center;
-    text-align: center;
-    opacity: 0;
-    transition: 0.2s;
-    margin: auto;
-    width: 200px;
-  	height: 40px;
-    display: block;
-    pointer-events: none;
-    padding: 0;
-    z-index: 999;
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s;
+  margin: auto;
+  width: 200px;
+  height: 40px;
+  display: block;
+  pointer-events: none;
+  padding: 0;
+  z-index: 999;
 }
 .links {
 	text-decoration: none;
 	font-family: DejaVu Sans Mono, monospace;
 	color: #4c4257;
-    font-size: 30px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    padding-left: -50px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-left: -50px;
 }
 .meer {
 	margin-top: -200px;
@@ -263,32 +254,32 @@ a a:hover:not(.active) {
 	height: 0;
 	border-top: 500px solid #e5ecff;
 	border-left: 1000px solid transparent;
-    position: relative;
-    z-index: -1;
-    margin: 0px;
-    padding: 0px;
+  position: relative;
+  z-index: -1;
+  margin: 0px;
+padding: 0px;
 }
 #triangle-topleft {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #e6e6ff;
+	border-top: 500px solid #d6d6fc;
 	border-right: 1000px solid transparent;
-    margin: 0;
-    position: relative;
-    z-index: -1;
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  position: relative;
+  z-index: -1;
+  margin: 0px;
+  padding: 0px;
 }
 #triangle-topleft2 {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #e6e6ff;
+	border-top: 500px solid #d6d6fc;
 	border-right: 1000px solid transparent;
-    margin: 0;
-    position: relative;
-    z-index: -1;
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  position: relative;
+  z-index: -1;
+  margin: 0px;
+  padding: 0px;
 }
 #triangle-bottomright {
 	width: auto;
@@ -314,7 +305,7 @@ a a:hover:not(.active) {
 #triangle-bottomleft {
 	width: auto;
 	height: 0;
-	border-bottom: 500px solid #e6e6ff;
+	border-bottom: 500px solid #d6d6fc;
 	border-right: 1000px solid transparent;
     position: relative;
     z-index: -1;
@@ -329,7 +320,7 @@ a a:hover:not(.active) {
     bottom: -150px;
 	border-left: 500px solid transparent;
 	border-right: 500px solid transparent;
-	border-top: 180px solid #e6e6ff;
+	border-top: 180px solid #d6d6fc;
     position: absolute;
     z-index: 1;
 }
@@ -343,7 +334,7 @@ a a:hover:not(.active) {
 	position: relative;
 	width: auto;
     height: 800px;
-	background-color: #e6e6ff;
+	background-color: #d6d6fc;
 }
 #box3 {
 	position: relative;
@@ -355,7 +346,7 @@ a a:hover:not(.active) {
 	position: relative;
 	width: auto;
     height: 200px;
-	background-color: #e6e6ff;
+	background-color: #d6d6fc;
     z-index: 1;
 }
 .barovermij {
@@ -364,7 +355,6 @@ a a:hover:not(.active) {
     height: 12px;
     background-color: #3F3F53;
     z-index: 2;
-
 }
 .indexschool {
 	display: flex;
@@ -387,62 +377,58 @@ a a:hover:not(.active) {
 }
 .indexcontact {
     width: 100%;
-    background-color: #4c4257;
+    background-color: #3F3F53;
     height: 1700px;
 }
 .h2school {
 	position: relative;
 	color: #3F3F53;
-    text-align: left;
-    font-family: Monospace;
-    text-transform: uppercase;
-    width: 0px;
-    height: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 0px;
+  height: 0px;
 	font-size: 45px;
-    padding: 0px;
-    font-weight: 500;
-    margin-bottom: 120px;
+  padding: 0px;
+  font-weight: 500;
+  margin-bottom: 120px;
+
 }
 .h2vrijetijd {
-    text-align: right;
+  text-align: right;
 	position: relative;
-    color: #3F3F53;
-    font-family: Monospace;
-    text-transform: uppercase;
-    width: 100%;
-    height: 0px;
+  color: #3F3F53;
+  text-transform: uppercase;
+  width: 100%;
+  height: 0px;
 	font-size: 45px;
-    font-weight: 500;
-    margin-bottom: 70px;
+  font-weight: 500;
+  margin-bottom: 70px;
 }
 .h2overmij {
 	position: relative;
 	color: #3F3F53;
-    text-align: left;
-    font-family: Monospace;
-    text-transform: uppercase;
-    width: 100%;
-    height: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
 	font-size: 45px;
-    margin-top: 40px;
-    font-weight: 500;
+  margin-top: 40px;
+  font-weight: 500;
 }
 .h2contact {
 	position: relative;
 	color: white;
-    text-align: center;
-    font-family: Monospace;
-    text-transform: uppercase;
-    width: 100%;
-    height: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 0px;
 	font-size: 48px;
-    padding-top: 350px;
-    font-weight: 500;
+  padding-top: 350px;
+  font-weight: 500;
 }
 .indexboxschool {
 	position: relative;
-    top: -800px;
-    width: 100%;
+  top: -800px;
+  width: 100%;
 	height: 0;
 }
 .indexboxvrijetijd {
@@ -455,10 +441,9 @@ a a:hover:not(.active) {
 }
 .indexboxovermij {
 	position: relative;
-        width: 1200px;
-	height: 150;
-    margin-top: 100px;
-    margin-bottom: 50px;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .indexboxcontact {
 	position: relative;
@@ -484,11 +469,12 @@ a a:hover:not(.active) {
     top: -300px;
 }
 .projectimage {
-	width: 600px;
-    height: 400px;
-    display: flex;
-    margin-left: 25px;
+	  width: 100%;
+    max-width: 600px;
+    height: auto;
+		display: flex;
     float: inline-block;
+		margin-left: 25px;
 }
 .indexproject {
 	width: auto;
@@ -499,21 +485,21 @@ a a:hover:not(.active) {
 }
 .textproject{
 	width: 600px;
-    height: 400px;
-    display: flex;
-    margin-left: -225px;
-    float: inline-block;
-    position: relative;
-    top: 100px;
+	height: 400px;
+	display: flex;
+  float: inline-block;
+  position: relative;
+	margin-left: -225px;
+  top: 100px;
 }
 .h3project {
 	text-decoration: none;
 	font-family: DejaVu Sans Mono, monospace;
 	color: #4c4257;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-    margin-left: 50px;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
 }
 .projects:hover {
     transition: 3s;
@@ -531,11 +517,12 @@ a a:hover:not(.active) {
 }
 .projectimage2 {
     transform: rotateY(180deg);
-	width: 600px;
-    height: 400px;
-    display: flex;
-    margin-left: 25px;
+		width: 100%;
+    max-width: 600px;
+    height: auto;
+		display: flex;
     float: inline-block;
+		margin-left: 25px;
 }
 .indexproject2 {
 	width: auto;
@@ -633,14 +620,14 @@ a a:hover:not(.active) {
 }
 .link1:hover, .link2:hover, .link3:hover {
 	opacity: 1;
-    color: black;
+  color: black;
 }
 .links:hover .redeffect {
 	color: red;
-    transition: 0.4s;
+transition: 0.4s;
 }
 .links:hover .meerspan{
 	color: red;
-    opacity: 1;
-    transition: 0.7s;
+  opacity: 1;
+  transition: 0.7s;
 }
