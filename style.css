@@ -4,7 +4,7 @@ body {
 }
 p {
 	color: black;
-  font-family: Courier;
+  font-family: Trebuchet, Verdana;
   font-size: 15px;
   text-align: left;
   margin-left: 60px;
@@ -75,8 +75,8 @@ span {
 	  background:#8C8CFD;
 	  width: 40px;
     float: center right;
+		font-family: Trebuchet, Verdana;
     color: black;
-    text-color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -86,9 +86,9 @@ span {
 	background:#8C8CFD;
     background-size: 75px 50px;
     width: 40px;
-	  float: center right ;
+	  float: center right;
+		font-family: Trebuchet, Verdana;
     color: black;
-    text-color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -110,7 +110,7 @@ span {
     margin-left: 40px;
    	margin-top: 13px;
     margin-right: 60px;
-	color: white;
+		color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -122,8 +122,9 @@ span {
 }
 .email a {
     color: white;
+		font-family: Trebuchet, Verdana;
     text-align: center;
-    font-size: 23px;
+    font-size: 19px;
     text-transform: uppercase;
     text-decoration: underline;
     text-decoration-color: #8C8CFD;
@@ -142,21 +143,12 @@ span {
     color: #373749;
     transition: 0.4s;
 }
-.nl a:hover {
+.nl .en a:hover {
 	transition: 0.1s;
-	background: linear-gradient(to top, #002395, #002395 33.33%, white 33.33%, white 66.66%, #ed2939 66.66%);
 	opacity: 0.6;
-    color: black;
-}
-.en a:hover {
- 	transition: 0.1s;
-    background-image: url(https://drive.google.com/uc?id=1CkvSnUxgA3uo8ljIA4X2HavFheQJAjzQ);
-    opacity: 0.6;
-    color: white;
 }
 a a.active {
 	opacity: 0.6;
-
 }
 a a:hover:not(.active) {
  	opacity: 0.6;
@@ -207,9 +199,8 @@ a a:hover:not(.active) {
 }
 .links {
 	text-decoration: none;
-	font-family: DejaVu Sans Mono, monospace;
+	font-family: Trebuchet, Verdana;
 	color: #4c4257;
-  font-size: 25px;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -385,9 +376,9 @@ padding: 0px;
 	color: #3F3F53;
   text-align: left;
   text-transform: uppercase;
+	font-size: 35px;
   width: 0px;
   height: 0px;
-	font-size: 45px;
   padding: 0px;
   font-weight: 500;
   margin-bottom: 120px;
@@ -398,9 +389,9 @@ padding: 0px;
 	position: relative;
   color: #3F3F53;
   text-transform: uppercase;
+	font-size: 35px;
   width: 100%;
   height: 0px;
-	font-size: 45px;
   font-weight: 500;
   margin-bottom: 70px;
 }
@@ -409,8 +400,8 @@ padding: 0px;
 	color: #3F3F53;
   text-align: left;
   text-transform: uppercase;
+	font-size: 35px;
   width: 100%;
-	font-size: 45px;
   margin-top: 40px;
   font-weight: 500;
 }
@@ -441,7 +432,8 @@ padding: 0px;
 }
 .indexboxovermij {
 	position: relative;
-  width: auto;
+  width: 100%;
+	max-width: 800px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
