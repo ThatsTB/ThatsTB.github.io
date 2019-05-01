@@ -62,7 +62,7 @@ span {
 		width: 100%;
 		position: fixed;
 		overflow: hidden;
-    z-index: 1000;
+    z-index: 9999;
     background-color: #3F3F53;
     top: 0;
 }
@@ -158,7 +158,7 @@ a a:hover:not(.active) {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -400px;
+    top: -360px;
     width: 100%;
 }
 .linkmenu {
@@ -206,139 +206,98 @@ a a:hover:not(.active) {
   padding: 0;
   padding-left: -50px;
 }
-.meer {
-	margin-top: -200px;
-    z-index: 999;
+#school {
+	position: relative;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
 }
-.meer2 {
-	margin-top: -200px;
-    text-align: right;
-    z-index: 999;
-    padding-right: 50px;
-}
-.meerspan {
-	opacity: 0;
-}
-.arrow {
-	text-decoration: none;
-	font-family: DejaVu Sans Mono, monospace;
-	color: #4c4257;
-    font-size: 27px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    padding-left: -50px;
+#vrijetijd {
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	margin-top: -700px;
+	margin-bottom: 50px;
 }
 #triangle-topright {
 	width: auto;
 	height: 0;
 	border-top: 500px solid #e5ecff;
-	border-left: 1000px solid transparent;
-    position: relative;
-    z-index: -1;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: -50px;
+	border-left: 75vw solid transparent;
 }
 #triangle-topright2 {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #e5ecff;
-	border-left: 1000px solid transparent;
-  position: relative;
-  z-index: -1;
-  margin: 0px;
-padding: 0px;
+	border-top: 250px solid #d6d6fc;
+	border-left: 75vw solid transparent;
 }
 #triangle-topleft {
 	width: auto;
 	height: 0;
 	border-top: 500px solid #d6d6fc;
-	border-right: 1000px solid transparent;
-  margin: 0;
-  position: relative;
-  z-index: -1;
-  margin: 0px;
-  padding: 0px;
+	border-right: 75vw solid transparent;
 }
 #triangle-topleft2 {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #d6d6fc;
-	border-right: 1000px solid transparent;
-  margin: 0;
-  position: relative;
-  z-index: -1;
-  margin: 0px;
-  padding: 0px;
+	border-top: 250px solid #e5ecff;
+	border-right: 75vw solid transparent;
 }
 #triangle-bottomright {
 	width: auto;
 	height: 0;
 	border-bottom: 500px solid #e5ecff;
-	border-left: 1000px solid transparent;
-    position: relative;
-    z-index: -1;
-    margin: 0px;
-    padding: 0px;
-    margin-top: -600px;
+	border-left: 75vw solid transparent;
+	margin-top: -600px;
 }
 #triangle-bottomright2 {
 	width: auto;
 	height: 0;
-	border-bottom: 500px solid #e5ecff;
-	border-left: 1000px solid transparent;
-    position: relative;
-    z-index: -1;
-    margin: 0px;
-    padding: 0px;
+	border-bottom: 250px solid #d6d6fc;
+	border-left: 75vw solid transparent;
 }
 #triangle-bottomleft {
 	width: auto;
 	height: 0;
-	border-bottom: 500px solid #d6d6fc;
-	border-right: 1000px solid transparent;
-    position: relative;
-    z-index: -1;
-    margin: 0px;
-    padding: 0px;
+	border-bottom: 250px solid #e5ecff;
+	border-right: 75vw solid transparent;
 }
 #triangle-contact {
 	width: auto;
 	height: 0;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: -150px;
-	border-left: 500px solid transparent;
-	border-right: 500px solid transparent;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -150px;
+	border-left: 40vw solid transparent;
+	border-right: 40vw solid transparent;
 	border-top: 180px solid #d6d6fc;
-    position: absolute;
-    z-index: 1;
+  position: absolute;
+  z-index: 1;
 }
 #box1 {
 	position: relative;
 	width: auto;
-    height: 300px;
+  height: 300px;
 	background-color: #e5ecff;
 }
 #box2 {
-	position: relative;
 	width: auto;
-    height: 800px;
-	background-color: #d6d6fc;
+  height: 200px;
+	background-color: #e5ecff;
 }
 #box3 {
-	position: relative;
 	width: auto;
-    height: 800px;
-	background-color: #e5ecff;
+  height: 200px;
+	background-color: #d6d6fc;
 }
 #box4overmij {
 	position: relative;
 	width: auto;
-    height: 200px;
+  height: 200px;
 	background-color: #d6d6fc;
-    z-index: 1;
+  z-index: 1;
 }
 .barovermij {
 	position: relative;
@@ -592,22 +551,22 @@ padding: 0px;
 .change .link1 {
 	-webkit-opacity: 0.8;
     opacity: 0.8;
-    -webkit-transform: translate(0px, 15px);
-    transform: translate(0px, 15px);
+    -webkit-transform: translate(0px, 30px);
+    transform: translate(0px, 30px);
     pointer-events: all;
 }
 .change .link2 {
 	-webkit-opacity: 0.8;
     opacity: 0.8;
-    -webkit-transform: translate(0px, 45px);
-    transform: translate(0px, 45px);
+    -webkit-transform: translate(0px, 60px);
+    transform: translate(0px, 60px);
     pointer-events: all;
 }
 .change .link3 {
 	-webkit-opacity: 0.8;
     opacity: 0.8;
-    -webkit-transform: translate(0px, 75px);
-    transform: translate(0px, 75px);
+    -webkit-transform: translate(0px, 90px);
+    transform: translate(0px, 90px);
     pointer-events: all;
 }
 .link1:hover, .link2:hover, .link3:hover {
