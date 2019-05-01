@@ -1,346 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <link rel="stylesheet" type="text/css"href="style.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124529132-1"></script>
 <script>
-
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-124529132-1');
-
 </script>
-
 	<title> Portfolio Thomas Bosma </title>
 	<link rel="icon" href="https://drive.google.com/uc?id=1FyK94DMayaFZfI-L1F8feJ1PQM03VTsT">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
-
 <body>
-
 <div class="topnav">
-
     <div class="nl">
   		<a class="language" href="">NL</a>
     </div>
-
-	<div class="en" >
+    <div class="en" >
   		<a  style=margin-left:50px; class="language" href="">EN</a>
-	</div>
+	  </div>
 
-	<a href="#overmij" class="links">
-    	<span class="redeffect">|
-        </span> Over Mij / Contact
+    <a href="#overmij" class="links">
+      <span class="redeffect">|</span> Over Mij / Contact
     </a>
-
-    <a  href="#vrijetijd" class="links">
-    	<span class="redeffect">|
-        </span> Vrije Tijd
+    <a  href="#vrijetijd" class="links">(wip)
+      <span class="redeffect">|</span> Vrije Tijd
     </a>
-
- 	<a href="#school" class="links">
-    	(wip) <span class="redeffect">|
-        </span> School
+    <a href="#school" class="links">(wip)
+      <span class="redeffect">|</span> School
     </a>
-
 </div>
 
 <!-- Home/toppage -->
 
-<div id="triangle-topleft"> </div>
+<div id="triangle-topleft"></div>
+<div class="title">
 
-   	<div class="title">
+  <h1>Thomas Bosma</h1>
+	<h2>Portfolio?</h2>
 
-        <h1>Thomas Bosma</h1>
-		<h2>Portfolio</h2>
+  <div class="linkmenu">
+    <ul class="bars" onclick="Schuif(this)">
 
+    <div class="bar1"></div>
+      <div>
+        <h3 class="link link1">
+          <a class="links"href="#school">
+            <span class="redeffect">></span>School
+          </a>
+        </h3>
+      </div>
 
-	 	 <div class="linkmenu">
-
-	<ul class="bars" onclick="Schuif(this)">
-
-    		<div class="bar1"></div>
-
+  		<div class="bar2"></div>
         <div>
-
-        	<h3 class="link link1">
-            	<a class="links"href="#school">
-                    <span class="redeffect">></span>
-                    School
-            	</a>
-            </h3>
-        </div>
-
-  			<div class="bar2"></div>
-
-  		<div>
         	<h3 class="link link2">
-            	<a class="links" href="#vrijetijd">
-                <span class="redeffect">></span>
-                Vrije tijd
-                </a>
-            </h3>
+            <a class="links" href="#vrijetijd">
+              <span class="redeffect">></span>Vrije tijd
+            </a>
+          </h3>
         </div>
 
-        	<div class="bar3"></div>
-  		<div>
+      <div class="bar3"></div>
+  		  <div>
         	<h3 class="link link3 hoverlink">
-            	<a class="links"href="#overmij">
-                <span class="redeffect">></span>
-                Overmij
-                </a>
-            </h3>
+            <a class="links"href="#overmij">
+              <span class="redeffect">></span>Overmij
+            </a>
+          </h3>
         </div>
-
-	</ul>
-
-	</div>
-
+      </ul>
+    </div>
 </div>
 
 <script>
-	function Schuif(x) {
-    	x.classList.toggle("change");
-}
+	function Schuif(x) {x.classList.toggle("change");}
 </script>
 
 <div id="triangle-bottomright"> </div>
-
 <div id="box1"> </div>
-
 <div id="triangle-topright"> </div>
 
-<!-- School
+ <!--School-->
 
-    <h2 class="links">
-    	<div id="school"class="h2school">
-        	<span class="redeffect">|</span>School
-            <span class="redeffect">|</span>Projecten
-        </div>
-    </h2>
-
-<div id="triangle-bottomleft"></div>
-
-<div id="box2"></div>
-
-<div class="indexboxschool">
-
-        <div class="projects">
-            	<div class="indexproject">
-        			<img class="projectimage"border=0 src="https://drive.google.com/uc?id=1oQf_urKSbSjbli-qm_Kon7OajiSj__CH">
-
-                 <h3 class="h3project"> Restwartmte </h3>
-
-                 	<div class="textproject">
-
-<p>
-Voor dit project hebben we voor het eerst zelf een opdrachtgever gezocht.
-Contour heeft ons de opdracht gegeven om verspilling van restwarmte uit datacenters tegen te gaan.
-Hiervoor hebben wij twee soorten oplossingen bedacht: de warmte en/of het water gebruiken en het warme water omzetten in energie met een peltier-element of ORC.
-</p>
-
-    				</div>
-
-            	</div>
-
-		</div>
-
-        <div class="projects">
-            	<div class="indexproject">
-        			<img class="projectimage"border=0 style="width:700px" src="https://drive.google.com/uc?id=18E_WLKMMZ1jLi4wTm2ErR_AQ7surUb01">
-
-                 <h3 class="h3project"> Lucifer probleem </h3>
-
-                 	<div class="textproject">
-
-<p>
-In klas 3 mochten we van het bedrijf 3M zelf voor een alledaags probleem een oplossing bedenken. We hebben als groep het probleem: moeite met lucifers aansteken gekozen. Als oplossingen hebben we een ergonomisch handvat ontworpen. Deze oplossing maakt het makkelijker om de lucifer aan te steken en als bonus verstevigd het de lucifer.
-</p>
-    				</div>
-
-            	</div>
-
-		</div>
-
-	<h3 class="meer">
-		<a class="links">
-			<span class="redeffect meerspan">>>></span>
-			Meer
-		</a>
-	</h3>
-
+<div id="school">
+  <div id="triangle-bottomleft"></div>
+  <div id="box2"></div>
+  <div id="triangle-topleft2"> </div>
 </div>
 
-<div id="triangle-topleft2"> </div>
+<!--Vrije Tijd-->
 
-Vrije Tijd
-
-    <h2 class="links">
-    	<div id="vrijetijd" class="h2vrijetijd">
-        	Vrije Tijd<span class="redeffect">|</span>
-        </div>
-    </h2>
-
-<div class="indexboxvrijetijd">
-
-     <div class="projects2">
-		<div class="indexproject2">
-        	<img class="projectimage2"border=0 style="width:700px" src="https://drive.google.com/uc?id=1XKAH0yeh7l0TV4pWpw4uyYwItCmuXNsF">
-
-           		 <h3 class="h3project2"> Website </h3>
-
-                 <div class="textproject2">
-
-<p>
-Eind Juli ben ik begonnen met mezelf HTML en CSS te leren. Daarvoor heb ik deze site gemaakt.
-</p>
-
-    			</div>
-
-      	</div>
-
-	</div>
-
-    <div class="projects2">
-		<div class="indexproject2">
-           	<img class="projectimage2"border=0 style="width: 500px" src="https://drive.google.com/uc?id=1vdDONoFVHKWK8Jbb_7Ys9SoSvMMB3qeD">
-
-                 <h3 class="h3project2">Tekenen</h3>
-
-                 <div class="textproject2">
-
-<p>
-Ik ben sinds kort begonnen met digitale tekeningen te maken. Hiervoor tekende ik al vaak op papier.
-</p>
-
-    			</div>
-
-      	</div>
-
-	</div>
-
-    <div class="projects2">
-		<div class="indexproject2">
-        	 <img class="projectimage2"border=0 style="width:700px" src="https://drive.google.com/uc?id=1rJK7zOQHLRyqX2hINGFsI_wM2tDsXUJD">
-
-          		 <h3 class="h3project2"> lego? </h3>
-
-                 <div class="textproject2">
-
-<p>
-Vanaf klas 1 ben ik begonnen met mijn eigen Lego creaties te gaan delen op Social Media met andere bouwers. Ondertussen heb ik 900 volgers gekregen en zijn er zelfs video's over mijn figuren gemaakt.
-</p>
-
-    			</div>
-
-      	</div>
-
-	</div>
-
-
-
-
-
-	<h3 class="meer2">
-         <a class="links">
-            <span class="redeffect meerspan">>>></span>
-            Meer
-         </a>
-    </h3>
-
+<div id="vrijetijd">
+  <div id="triangle-bottomright2"> </div>
+  <div id="box3"> </div>
+  <div id="triangle-topright2"> </div>
 </div>
-
-
-<div id="triangle-bottomright2"> </div>
-
-<div id="box3"> </div>
-
-<div id="triangle-topright2"> </div>
--->
 
 <!-- Over Mij -->
 
 <div class="indexovermij">
-
-    <div class="barovermij"></div>
-
-    	<h2 class="links">
-        	<div id="overmij" class=h2overmij>
-            	<span class="redeffect">|</span>Over Mij
-            </div>
-        </h2>
-
-        	<div class="indexboxovermij">
-
-        	<p>Hallo lezer! Ik heb geen idee hoe je hier bent gekomen, maar ik ben Thomas Bosma en heb deze site gemaakt voor de "lol". Ik zit nu op het Almende College Isala in klas 5 Havo.</p><p> Al een tijd vindt ik het leuk om dingen te ontwerpen, ik teken, ontwerp logo's en bewerk foto's. Hier kan je vinden wat ik zowel heb gemaakt, kijk gerust rond.<p>Voor mijn komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in tekenen op papier en op de computer. HTML en CSS leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken. </p>
-    	   </div>
-
-<div id="box4overmij"></div>
-
-<div id="triangle-contact"></div>
-
+  <div class="barovermij"></div>
+  <h2 class="links">
+    <div id="overmij" class=h2overmij>
+      <span class="redeffect">|</span>Over Mij
+    </div>
+  </h2>
+  <div class="indexboxovermij">
+    <p>Hallo lezer!</p>
+    <p>Ik was benieuwd hoe een website in elkaar zat, dit is het resultaat: een hobby "Portfolio". <del>Ookal is het nog niet af</del>.</p>
+    <p>Al een tijd vind ik het leuk om dingen te ontwerpen, ik teken, ontwerp logo's en bewerk foto's. Hier kan je vinden wat ik zowel heb gemaakt.
+    <p>Voor mijn komende projecten, zowel voor projecten van school als in mijn vrije tijd, zou ik graag beter willen worden in tekenen op papier en op de computer. HTML en CSS leren stond ook op het progamma, maar zoals je kan zien ben ik daar mee bezig geweest. Ook wil ik een kleine game en animatie maken.</p>
+  </div>
+  <div id="box4overmij"></div>
+  <div id="triangle-contact"></div>
 </div>
 
 <!-- Contact -->
 
 <div class="indexcontact">
-
-    <h2> <div class="h2contact"> Contact
-    </div></h2>
-
-    	<div class="indexboxcontact">
-        	<div class="email">
-                <a href="mailto:thomas12bosma@gmail.com" target="_blank"> Email
-                </a>
-
-        	</div>
-       </div>
-</div>
-
-<!-- Bottom of page -->
-
-<div class="bottomnav">
-
-	<p style="font-size:12px;color:white;text-align:right;margin-top:130px;margin-right:40px;margin-bottom:20px"> &copy; 2018 T. Bosma </p>
-
+  <h2>
+    <div class="h2contact"> Contact</div>
+  </h2>
+  <div class="indexboxcontact">
+    <div class="email">
+      <a href="mailto:thomas12bosma@gmail.com" target="_blank"> Email</a>
+    </div>
+  </div>
 </div>
 </body>
 </html>
-
-<!--
-
-    			<iframe src="https://www.youtube.com/embed/KMauP4kRiEY"
-        	width="350"height="190"frameborder="0"allowfullscreen>
-		</iframe>
-
-		<iframe src="https://www.youtube.com/embed/MccTCcEi650"
-        	width="350"height="190"frameborder="0"allowfullscreen>
-		</iframe>
-
-		<iframe src="https://www.youtube.com/embed/EIqiVSHo6TM"
-        	width="350"height="190"frameborder="0" allowfullscreen>
-		</iframe>
-
-
-
-
-
-	<div class=linklogos>
-
-		<a href=" https://www.flickr.com/photos/141990353@N02/"target="_blank">
-        	<img border=0 src="https://drive.google.com/uc?id=11IN4eB51P1-NUp5GDEe2HpWLRLIapMy7" 										style="width:70px;height:70px;border:0;"class="fa fa-flickr"></a>
-            			<span class="caption" style=font-size:13px;margin-top:-23px;>Flickr</span>
-
-		<a href=" https://www.instagram.com/bionic.t.b/ " target="_blank">
-        	<img border=0 src="https://drive.google.com/uc?id=1snBRsYCKdqOysngV0n3TAZT6lu-lghVK"
-            	style="width:70px;height:70px;border:0;" class= "fa fa-insta"></a>
-						<span class="caption" style=font-size:13px;margin-top:-23px;>Instagram</span>
-
-	</div>
--->
