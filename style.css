@@ -1,9 +1,9 @@
 body {
 	margin: 0;
 	font-family:  Courier New;
+	background-color: #1c1f24;
 }
 p {
-	color: black;
   font-family: Trebuchet,Verdana;
   font-size: 15px;
   text-align: left;
@@ -22,7 +22,7 @@ div {
   padding: 0px;
 }
 h1 {
-  color: white;
+  color: #181a1c;
   text-align: center;
 	font-family: Century, sans-serif;
   font-size: 40px;
@@ -31,32 +31,14 @@ h1 {
   font-weight: 500;
 }
 h2 {
-	color: #8C8CFD;
+	color: white;
 	font-family: Century, sans-serif;
   text-align: center;
 	text-transform: uppercase;
 	font-size: 30px;
 }
-h3 {
-	position: relative;
-  color: white;
-  text-align: left;
-  font-family: Courier New;
-	font-size: 20px;
-  text-transform: uppercase;
-  padding: 0px;
-  padding-left: 50px;
-  margin: 0px;
-  font-weight: 500;
-}
-h4 {
-	color: #3F3F53;
-}
-h5 {
-	color: #3F3F53;
-}
 span {
-	color: #8C8CFD;
+	color: #e4c9ff;
 }
 #school {
 	position: relative;
@@ -84,44 +66,44 @@ span {
 #triangle-topright {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #e5ecff;
+	border-top: 500px solid #181a1c;
 	border-left: 75vw solid transparent;
 }
 #triangle-topright2 {
 	width: auto;
 	height: 0;
-	border-top: 250px solid #d6d6fc;
+	border-top: 250px solid #ffc9c9;
 	border-left: 75vw solid transparent;
 }
 #triangle-topleft {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #d6d6fc;
+	border-top: 500px solid #e4c9ff;
 	border-right: 75vw solid transparent;
 }
 #triangle-topleft2 {
 	width: auto;
 	height: 0;
-	border-top: 250px solid #e5ecff;
+	border-top: 250px solid #181a1c;
 	border-right: 75vw solid transparent;
 }
 #triangle-bottomright {
 	width: auto;
 	height: 0;
-	border-bottom: 500px solid #e5ecff;
+	border-bottom: 500px solid #181a1c;
 	border-left: 75vw solid transparent;
 	margin-top: -600px;
 }
 #triangle-bottomright2 {
 	width: auto;
 	height: 0;
-	border-bottom: 250px solid #d6d6fc;
+	border-bottom: 250px solid #ffc9c9;
 	border-left: 75vw solid transparent;
 }
 #triangle-bottomleft {
 	width: auto;
 	height: 0;
-	border-bottom: 250px solid #e5ecff;
+	border-bottom: 250px solid #181a1c;
 	border-right: 75vw solid transparent;
 }
 #triangle-contact {
@@ -132,7 +114,7 @@ span {
   bottom: -150px;
 	border-left: 40vw solid transparent;
 	border-right: 40vw solid transparent;
-	border-top: 180px solid #d6d6fc;
+	border-top: 180px solid #ffe4c9;
   position: absolute;
   z-index: 1;
 }
@@ -140,23 +122,23 @@ span {
 	position: relative;
 	width: auto;
   height: 300px;
-	background-color: #e5ecff;
+	background-color: #181a1c;
 }
 #box2 {
 	width: auto;
   height: 200px;
-	background-color: #e5ecff;
+	background-color: #181a1c;
 }
 #box3 {
 	width: auto;
   height: 200px;
-	background-color: #d6d6fc;
+	background-color: #ffc9c9;
 }
 #box4overmij {
 	position: relative;
 	width: auto;
   height: 200px;
-	background-color: #d6d6fc;
+	background-color: #ffe4c9;
   z-index: 1;
 }
 .topnav {
@@ -164,11 +146,11 @@ span {
 	position: fixed;
 	overflow: hidden;
   z-index: 1000;
-  background-color: #3F3F53;
+  background-color: #181a1c;
   top: 0;
 }
 .nl a {
-	background:#8C8CFD;
+	background:#e4c9ff;
 	width: 40px;
   float: center right;
 	font-family: Trebuchet, Verdana;
@@ -179,7 +161,7 @@ span {
   text-transform: uppercase;
 }
 .en a {
-	background:#8C8CFD;
+	background:#e4c9ff;
   background-size: 75px 50px;
   width: 40px;
 	float: center right;
@@ -199,42 +181,19 @@ span {
   font-size: 17px;
   text-transform: uppercase;
 }
-.bottomnav a {
-	float: left;
-  height: 30px;
-  width: 130px;
-  margin-left: 40px;
-  margin-top: 13px;
-  margin-right: 60px;
-	color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-.email {
-  padding-top: 200px;
-}
 .email a {
-  color: white;
+  color: #464d53;
 	font-family: Trebuchet, Verdana;
   text-align: center;
   font-size: 19px;
-  text-transform: uppercase;
   text-decoration: underline;
-  text-decoration-color: #8C8CFD;
+  text-decoration-color: #e4c9ff;
   text-underline-position: under;
 }
 .email a:hover {
   text-decoration-color: red;
 }
 .topnav a:hover {
-	background-color: white;
-  color: #373749;
-  transition: 0.4s;
-}
-.bottomnav a:hover {
 	background-color: white;
   color: #373749;
   transition: 0.4s;
@@ -270,16 +229,15 @@ a a:hover:not(.active) {
   padding: 0;
 }
 .bar1, .bar2, .bar3 {
-  width: 270px;
+  width: 490px;
   height: 10px;
-  background-color: #3F3F53;
+  background-color: #1c1f24;
   margin-bottom: 10px;
   margin-top: 10px;
   transition: 0.2s;
 }
 .link {
   text-decoration: solid;
-  color: white;
  	border: 0;
 	position: center;
   text-align: center;
@@ -290,14 +248,16 @@ a a:hover:not(.active) {
   height: 40px;
   display: block;
   pointer-events: none;
-  padding: 0;
-  z-index: 999;
+	position: relative;
+	font-size: 19px;
+  text-transform: uppercase;
 }
 .links {
+	color: white;
 	text-decoration: none;
 	font-family: Trebuchet, Verdana;
-	color: #4c4257;
   text-align: center;
+	font-weight: 400;
   margin: 0;
   padding: 0;
   padding-left: -50px;
@@ -305,8 +265,8 @@ a a:hover:not(.active) {
 .barovermij {
 	position: relative;
   width: 100%;
-  height: 12px;
-  background-color: #3F3F53;
+  height: 13px;
+  background-color: #181a1c;
   z-index: 2;
 }
 .indexovermij {
@@ -316,12 +276,11 @@ a a:hover:not(.active) {
 }
 .indexcontact {
   width: 100%;
-  background-color: #3F3F53;
-  height: 1150px;
+  background-color: #181a1c;
+  height: 700px;
 }
 .h2overmij {
 	position: relative;
-	color: #3F3F53;
   text-align: left;
   text-transform: uppercase;
 	font-size: 35px;
@@ -331,7 +290,6 @@ a a:hover:not(.active) {
 }
 .h2contact {
 	position: relative;
-	color: white;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -346,20 +304,13 @@ a a:hover:not(.active) {
 	max-width: 800px;
   margin-top: 50px;
   margin-bottom: 50px;
+	color: #444d54;
 }
 .indexboxcontact {
 	position: relative;
   text-align: center;
-  width: 300px;
-  height: 800px;
-  border-color: #8C8CFD;
-  border-top: transparent;
-  border-bottom: transparent;
-  border-style: solid;
-  border-width: 6px;
-  border-radius: 50% / 10%;
-  margin: auto;
-  top: -100px;
+	padding-top: 99px;
+	margin: auto;
 }
 .change .bar1 {
   -webkit-transform: translate(0px, 10px);
@@ -374,29 +325,28 @@ a a:hover:not(.active) {
   transform: translate(0px, 70px);
 }
 .change .link1 {
-	-webkit-opacity: 0.8;
-  opacity: 0.8;
+	-webkit-opacity: 1;
+  opacity: 1;
   -webkit-transform: translate(0px, 30px);
   transform: translate(0px, 30px);
   pointer-events: all;
 }
 .change .link2 {
-	-webkit-opacity: 0.8;
-  opacity: 0.8;
+	-webkit-opacity: 1;
+  opacity: 1;
   -webkit-transform: translate(0px, 60px);
   transform: translate(0px, 60px);
   pointer-events: all;
 }
 .change .link3 {
-	-webkit-opacity: 0.8;
-  opacity: 0.8;
+	-webkit-opacity: 1;
+  opacity: 1;
   -webkit-transform: translate(0px, 90px);
   transform: translate(0px, 90px);
   pointer-events: all;
 }
-.link1:hover, .link2:hover, .link3:hover {
-	opacity: 1;
-  color: black;
+.links:hover {
+  text-color: black;
 }
 .links:hover .redeffect {
 	color: red;
