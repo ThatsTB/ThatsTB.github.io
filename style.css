@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font-family:  Courier New;
-	background-color: #1c1f24;
+	background-color: #1d1f25;
 }
 p {
   font-family: Trebuchet,Verdana;
@@ -22,7 +22,7 @@ div {
   padding: 0px;
 }
 h1 {
-  color: #181a1c;
+	color: white;
   text-align: center;
 	font-family: Century, sans-serif;
   font-size: 40px;
@@ -38,7 +38,7 @@ h2 {
 	font-size: 30px;
 }
 span {
-	color: #e4c9ff;
+	color: #ffc9c9;
 }
 #school {
 	position: relative;
@@ -66,45 +66,21 @@ span {
 #triangle-topright {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #181a1c;
-	border-left: 75vw solid transparent;
-}
-#triangle-topright2 {
-	width: auto;
-	height: 0;
-	border-top: 250px solid #ffc9c9;
+	border-top: 500px solid #2e2e32;
 	border-left: 75vw solid transparent;
 }
 #triangle-topleft {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #e4c9ff;
-	border-right: 75vw solid transparent;
-}
-#triangle-topleft2 {
-	width: auto;
-	height: 0;
-	border-top: 250px solid #181a1c;
+	border-top: 500px solid #ffc9c9;
 	border-right: 75vw solid transparent;
 }
 #triangle-bottomright {
 	width: auto;
 	height: 0;
-	border-bottom: 500px solid #181a1c;
+	border-bottom: 500px solid #2e2e32;
 	border-left: 75vw solid transparent;
 	margin-top: -600px;
-}
-#triangle-bottomright2 {
-	width: auto;
-	height: 0;
-	border-bottom: 250px solid #ffc9c9;
-	border-left: 75vw solid transparent;
-}
-#triangle-bottomleft {
-	width: auto;
-	height: 0;
-	border-bottom: 250px solid #181a1c;
-	border-right: 75vw solid transparent;
 }
 #triangle-contact {
 	width: auto;
@@ -122,17 +98,7 @@ span {
 	position: relative;
 	width: auto;
   height: 300px;
-	background-color: #181a1c;
-}
-#box2 {
-	width: auto;
-  height: 200px;
-	background-color: #181a1c;
-}
-#box3 {
-	width: auto;
-  height: 200px;
-	background-color: #ffc9c9;
+	background-color: #2e2e32;
 }
 #box4overmij {
 	position: relative;
@@ -146,11 +112,11 @@ span {
 	position: fixed;
 	overflow: hidden;
   z-index: 1000;
-  background-color: #181a1c;
+  background-color: #2e2e32;
   top: 0;
 }
 .nl a {
-	background:#e4c9ff;
+	background:#ffc9c9;
 	width: 40px;
   float: center right;
 	font-family: Trebuchet, Verdana;
@@ -161,7 +127,7 @@ span {
   text-transform: uppercase;
 }
 .en a {
-	background:#e4c9ff;
+	background:#ffc9c9;
   background-size: 75px 50px;
   width: 40px;
 	float: center right;
@@ -187,7 +153,7 @@ span {
   text-align: center;
   font-size: 19px;
   text-decoration: underline;
-  text-decoration-color: #e4c9ff;
+  text-decoration-color: #ffe4c9;
   text-underline-position: under;
 }
 .email a:hover {
@@ -266,7 +232,7 @@ a a:hover:not(.active) {
 	position: relative;
   width: 100%;
   height: 13px;
-  background-color: #181a1c;
+  background-color: #2e2e32;
   z-index: 2;
 }
 .indexovermij {
@@ -276,7 +242,7 @@ a a:hover:not(.active) {
 }
 .indexcontact {
   width: 100%;
-  background-color: #181a1c;
+  background-color: #2e2e32;
   height: 700px;
 }
 .h2overmij {
