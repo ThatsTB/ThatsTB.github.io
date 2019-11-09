@@ -1,6 +1,7 @@
 body {
 	margin: 0;
-	font-family:  Courier New;
+	padding: 0;
+	border: 0;
 	background-color: #1d1f25;
 }
 p {
@@ -18,8 +19,9 @@ img {
   background-color: transparent;
 }
 div {
-	margin: 0px;
-  padding: 0px;
+	margin: 0;
+  padding: 0;
+	border: 0;
 }
 h1 {
 	color: white;
@@ -39,29 +41,6 @@ h2 {
 }
 span {
 	color: #ffc9c9;
-}
-#school {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	margin-top: 50px;
-}
-#vrijetijd {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	margin-top: -700px;
-	margin-bottom: 50px;
-}
-#school:hover {
-	position: relative;
-	z-index: 1;
-	transform: translateY(10px);
-}
-#vrijetijd:hover {
-	position: relative;
-	z-index: 1;
-	transform: translateY(10px);
 }
 #triangle-topright {
 	width: auto;
@@ -94,13 +73,22 @@ span {
   position: absolute;
   z-index: 1;
 }
-#box1 {
+#boxhome {
 	position: relative;
 	width: auto;
   height: 300px;
 	background-color: #2e2e32;
 }
-#box4overmij {
+#boxstuff {
+	position: relative;
+	width: auto;
+  height: 1000px;
+	margin: 20px;
+	margin-top: 150px;
+	background-color: #c9ffe4;
+  z-index: 1;
+}
+#boxovermij {
 	position: relative;
 	width: auto;
   height: 200px;
@@ -228,30 +216,43 @@ a a:hover:not(.active) {
   padding: 0;
   padding-left: -50px;
 }
-.barovermij {
+.longbar {
 	position: relative;
   width: 100%;
-  height: 13px;
+  height: 50px;
   background-color: #2e2e32;
-  z-index: 2;
+  z-index: -1;
+	bottom: -20px;
+}
+.indexstuff {
+	width: 100%;
+	position: relative;
+	top: 100px;
 }
 .indexovermij {
   width: 100%;
 	position: relative;
-  top: 100px;
+	top: 100px;
 }
 .indexcontact {
   width: 100%;
   background-color: #2e2e32;
-  height: 700px;
+  height: 800px;
+}
+.h2stuff{
+	position: relative;
+  text-align: left;
+  text-transform: uppercase;
+	font-size: 30px;
+  width: 100%;
+  font-weight: 500;
 }
 .h2overmij {
 	position: relative;
   text-align: left;
   text-transform: uppercase;
-	font-size: 35px;
+	font-size: 30px;
   width: 100%;
-  margin-top: 40px;
   font-weight: 500;
 }
 .h2contact {
@@ -260,9 +261,16 @@ a a:hover:not(.active) {
   text-transform: uppercase;
   width: 100%;
   height: 0px;
-	font-size: 48px;
+	font-size: 40px;
   padding-top: 350px;
   font-weight: 500;
+}
+.indexboxstuff {
+	position: relative;
+  width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: #444d54;
 }
 .indexboxovermij {
 	position: relative;
@@ -286,10 +294,6 @@ a a:hover:not(.active) {
 	-webkit-transform: translate(0px 40px);
   transform: translate(0px, 40px);
 }
-.change .bar3 {
-  -webkit-transform: translate(0px, 70px);
-  transform: translate(0px, 70px);
-}
 .change .link1 {
 	-webkit-opacity: 1;
   opacity: 1;
@@ -302,13 +306,6 @@ a a:hover:not(.active) {
   opacity: 1;
   -webkit-transform: translate(0px, 60px);
   transform: translate(0px, 60px);
-  pointer-events: all;
-}
-.change .link3 {
-	-webkit-opacity: 1;
-  opacity: 1;
-  -webkit-transform: translate(0px, 90px);
-  transform: translate(0px, 90px);
   pointer-events: all;
 }
 .links:hover {
