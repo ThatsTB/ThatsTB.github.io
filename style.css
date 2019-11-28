@@ -51,7 +51,7 @@ span {
 #triangle-topleft {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #ffc9c9;
+	border-top: 500px solid #cfc9ff;
 	border-right: 75vw solid transparent;
 }
 #triangle-bottomright {
@@ -69,7 +69,7 @@ span {
   bottom: -150px;
 	border-left: 40vw solid transparent;
 	border-right: 40vw solid transparent;
-	border-top: 180px solid #ffe4c9;
+	border-top: 180px solid #ffecc9;
   position: absolute;
   z-index: 1;
 }
@@ -85,14 +85,14 @@ span {
   height: 1000px;
 	margin: 20px;
 	margin-top: 150px;
-	background-color: #c9ffe4;
+	background-color: #c9ffcc;
   z-index: 1;
 }
 #boxovermij {
 	position: relative;
 	width: auto;
   height: 200px;
-	background-color: #ffe4c9;
+	background-color: #ffecc9;
   z-index: 1;
 }
 .topnav {
@@ -104,7 +104,7 @@ span {
   top: 0;
 }
 .nl a {
-	background:#ffc9c9;
+	background:#cfc9ff;
 	width: 40px;
   float: center right;
 	font-family: Trebuchet, Verdana;
@@ -115,7 +115,7 @@ span {
   text-transform: uppercase;
 }
 .en a {
-	background:#ffc9c9;
+	background:#cfc9ff;
   background-size: 75px 50px;
   width: 40px;
 	float: center right;
@@ -141,7 +141,7 @@ span {
   text-align: center;
   font-size: 19px;
   text-decoration: underline;
-  text-decoration-color: #ffe4c9;
+  text-decoration-color: #ffecc9;
   text-underline-position: under;
 }
 .email a:hover {
@@ -310,6 +310,10 @@ a a:hover:not(.active) {
 }
 .links:hover {
   text-color: black;
+}
+#overmij:hover .redeffect {
+	color: #ffecc9;
+	transition: 0.4s;
 }
 .links:hover .redeffect {
 	color: red;
