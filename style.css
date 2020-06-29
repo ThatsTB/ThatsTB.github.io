@@ -40,7 +40,7 @@ h2 {
 	font-size: 30px;
 }
 span {
-	color: #ffc9c9;
+	color: white;
 }
 #triangle-topright {
 	width: auto;
@@ -51,7 +51,7 @@ span {
 #triangle-topleft {
 	width: auto;
 	height: 0;
-	border-top: 500px solid #cfc9ff;
+	border-top: 500px solid #d9dcff;
 	border-right: 75vw solid transparent;
 }
 #triangle-bottomright {
@@ -59,7 +59,7 @@ span {
 	height: 0;
 	border-bottom: 500px solid #2e2e32;
 	border-left: 75vw solid transparent;
-	margin-top: -600px;
+	margin-top: -400px;
 }
 #triangle-contact {
 	width: auto;
@@ -69,7 +69,7 @@ span {
   bottom: -150px;
 	border-left: 40vw solid transparent;
 	border-right: 40vw solid transparent;
-	border-top: 180px solid #ffecc9;
+	border-top: 180px solid #fffcd9;
   position: absolute;
   z-index: 1;
 }
@@ -85,14 +85,14 @@ span {
   height: 1000px;
 	margin: 20px;
 	margin-top: 150px;
-	background-color: #c9ffcc;
+	background-color: #dbddee;
   z-index: 1;
 }
 #boxovermij {
 	position: relative;
 	width: auto;
   height: 200px;
-	background-color: #ffecc9;
+	background-color: #fffcd9;
   z-index: 1;
 }
 .topnav {
@@ -104,7 +104,7 @@ span {
   top: 0;
 }
 .nl a {
-	background:#cfc9ff;
+	background:#d9dcff;
 	width: 40px;
   float: center right;
 	font-family: Trebuchet, Verdana;
@@ -115,7 +115,7 @@ span {
   text-transform: uppercase;
 }
 .en a {
-	background:#cfc9ff;
+	background:#d9dcff;
   background-size: 75px 50px;
   width: 40px;
 	float: center right;
@@ -169,26 +169,6 @@ a a:hover:not(.active) {
   position: relative;
   top: -360px;
   width: 100%;
-}
-.linkmenu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0px;
-  position: relative;
-}
-.bars {
-  display: inline;
-  cursor: pointer;
-  padding: 0;
-}
-.bar1, .bar2, .bar3 {
-  width: 490px;
-  height: 10px;
-  background-color: #1c1f24;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  transition: 0.2s;
 }
 .link {
   text-decoration: solid;
@@ -270,7 +250,7 @@ a a:hover:not(.active) {
   width: 100%;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	color: #444d54;
+	color: #f0d9ff;
 }
 .indexboxovermij {
 	position: relative;
@@ -286,36 +266,18 @@ a a:hover:not(.active) {
 	padding-top: 99px;
 	margin: auto;
 }
-.change .bar1 {
-  -webkit-transform: translate(0px, 10px);
-  transform: translate(0px, 10px);
-}
-.change .bar2 {
-	-webkit-transform: translate(0px 40px);
-  transform: translate(0px, 40px);
-}
-.change .link1 {
-	-webkit-opacity: 1;
-  opacity: 1;
-  -webkit-transform: translate(0px, 30px);
-  transform: translate(0px, 30px);
-  pointer-events: all;
-}
-.change .link2 {
-	-webkit-opacity: 1;
-  opacity: 1;
-  -webkit-transform: translate(0px, 60px);
-  transform: translate(0px, 60px);
-  pointer-events: all;
-}
 .links:hover {
   text-color: black;
 }
+#stuff:hover .redeffect {
+	color: #f0d9ff;
+	transition: 0.4s;
+}
 #overmij:hover .redeffect {
-	color: #ffecc9;
+	color: #fffcd9;
 	transition: 0.4s;
 }
 .links:hover .redeffect {
-	color: red;
+	color: #d9dcff;
 	transition: 0.4s;
 }
