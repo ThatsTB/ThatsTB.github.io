@@ -6,7 +6,7 @@ body {
 }
 p {
   font-family: Trebuchet,Verdana;
-  font-size: 15px;
+  font-size: 17px;
   text-align: left;
   margin-left: 60px;
 }
@@ -106,7 +106,6 @@ span {
 .nl a {
 	background:#d9dcff;
 	width: 40px;
-  float: center right;
 	font-family: Trebuchet, Verdana;
   color: black;
   text-align: center;
@@ -116,15 +115,19 @@ span {
 }
 .en a {
 	background:#d9dcff;
-  background-size: 75px 50px;
   width: 40px;
-	float: center right;
 	font-family: Trebuchet, Verdana;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   text-transform: uppercase;
+}
+.nl {
+	float: left;
+}
+.en {
+	float: left;
 }
 .topnav a {
 	float: right;
@@ -135,17 +138,19 @@ span {
   font-size: 17px;
   text-transform: uppercase;
 }
-.email a {
+.social {
+	padding-top: 10px;
+}
+.social a {
   color: #464d53;
 	font-family: Trebuchet, Verdana;
   text-align: center;
   font-size: 19px;
-  text-decoration: underline;
-  text-decoration-color: #ffecc9;
-  text-underline-position: under;
+  text-decoration: none;
 }
-.email a:hover {
-  text-decoration-color: red;
+.social a:hover {
+	color: #d9dcff;
+	transition: 0.8s;
 }
 .topnav a:hover {
 	background-color: white;
