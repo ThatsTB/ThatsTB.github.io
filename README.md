@@ -5,7 +5,7 @@
 This is my first try at making a website from scratch using HTML and CSS.<br/>
 https://thatstb.github.io/
 
-To Do:
+To Do:<br/>
 Adding content to the first grey div<br/>
 Finally adding my creative projects<br/>
 Cleaning up unnecessary CSS lines<br/>
