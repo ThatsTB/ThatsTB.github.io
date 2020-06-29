@@ -1,4 +1,4 @@
-## Hello all,
+## Hi
 
 ###### *Began making this site in 2018*
 
