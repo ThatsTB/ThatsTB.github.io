@@ -1,9 +1,11 @@
 ## Hello all,
 
-###### *This is my first time here*
+###### *Began making this site in 2018*
 
-I don't know how you got here,
-but this is the repository for my portfolio site
+This is my first try at making a website from scratch using HTML and CSS.
+https://thatstb.github.io/
 
-Eventual site: https://thatstb.github.io/
-:) (atom sync test)
+To Do:
+Adding content to the first grey div
+Finally adding my creative projects
+Cleaning up unnecessary CSS lines
