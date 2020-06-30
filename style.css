@@ -13,11 +13,6 @@ p {
 a {
 	align: center;
 }
-img {
-  max-width: 100%;
-  height: auto;
-  background-color: transparent;
-}
 div {
 	margin: 0;
   padding: 0;
@@ -38,6 +33,18 @@ h2 {
   text-align: center;
 	text-transform: uppercase;
 	font-size: 35px;
+}
+h3 {
+	position: absolute;
+	color: white;
+	font-family: Arial;
+	text-align: center;
+	text-transform: lowercase;
+	font-size: 20px;
+	height: 100%;
+	width: 100%;
+	top: 90px;
+	font-weight: 1000;
 }
 span {
 	color: white;
@@ -82,11 +89,9 @@ span {
 #boxstuff {
 	position: relative;
 	width: auto;
-  height: 1000px;
+  height: auto;
 	margin: 20px;
-	margin-top: 150px;
-	background-color: #dbddee;
-  z-index: 1;
+	margin-top: 70px;
 }
 #boxovermij {
 	position: relative;
@@ -255,7 +260,6 @@ a a:hover:not(.active) {
   width: 100%;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	color: #f0d9ff;
 }
 .indexboxovermij {
 	position: relative;
@@ -270,6 +274,21 @@ a a:hover:not(.active) {
   text-align: center;
 	padding-top: 99px;
 	margin: auto;
+}
+.imagecrop {
+	position: relative;
+	background-color: black;
+	overflow: hidden;
+	max-width: inherit;
+	max-height: 200px;
+	padding-bottom: 50px;
+}
+img {
+	opacity: 0.4;
+}
+img:hover {
+	opacity: 1;
+	transition: 0.5s;
 }
 .links:hover {
   text-color: black;
