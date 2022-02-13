@@ -8,6 +8,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #e6e6e6;
+  max-height: 110px;
 }
 p {
 }
@@ -15,7 +16,8 @@ h1{
 }
 a {
   margin: 9px;
-  font-size: 2vw;
+  font-size: clamp(10px, 2vw, 20px);
+  max-height: 100px;
   text-decoration: none;
 }
 a:link {
@@ -28,8 +30,10 @@ a:visited {
   color: #B88DFA;
 }
 img.header-img {
-  width: 10%;
-  height: auto;
+  width: 10vw;
+  height: 10vw;
+  max-width: 100px;
+  max-height: 100px;
   margin: 10px;
   margin-right: 50px;
 }
