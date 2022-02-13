@@ -2,4 +2,5 @@ body {
 }
 header {
   display: block;
+  height: 100px;
 }
