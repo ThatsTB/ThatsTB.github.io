@@ -8,7 +8,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #e6e6e6;
-  max-height: 110px;
+  max-height: 100px;
 }
 p {
 }
@@ -32,8 +32,8 @@ a:visited {
 img.header-img {
   width: 10vw;
   height: 10vw;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 90px;
+  max-height: 90px;
   margin: 10px;
   margin-right: 50px;
 }
