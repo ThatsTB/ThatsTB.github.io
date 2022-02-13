@@ -2,5 +2,10 @@ body {
 }
 header {
   display: block;
+  color: red;
   height: 100px;
+}
+.header-img {
+  width: 100%
+  height 100px;
 }
