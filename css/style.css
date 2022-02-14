@@ -2,23 +2,26 @@ html {
   font-family: verdana;
 }
 body {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
 }
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e6e6e6;
-  max-height: 100px;
+  max-height: clamp(90px, 20vw, 100px);
+  padding: 10px;
+  border-bottom: 3px solid #B88DFA;
 }
 p {
 }
 h1{
 }
 a {
-  margin: 9px;
-  font-size: clamp(10px, 2vw, 20px);
-  max-height: 100px;
+  font-size: clamp(15px, 2vw, 20px);
   text-decoration: none;
+  margin: clamp(3px, 1vw, 9px);
 }
 a:link {
   color: black;
@@ -26,14 +29,15 @@ a:link {
 a:hover {
   color: #808080;
 }
+a:active {
+  color: #B88DFA;
+}
 a:visited {
   color: #B88DFA;
 }
 img.header-img {
-  width: 10vw;
-  height: 10vw;
-  max-width: 90px;
-  max-height: 90px;
+  width: clamp(80px, 10vw, 100px);
+  height: clamp(80px, 10vw, 100px);
   margin: 10px;
-  margin-right: 50px;
+  margin-right: clamp(10px, 5vw, 50px);
 }
