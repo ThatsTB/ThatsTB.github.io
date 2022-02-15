@@ -11,7 +11,7 @@ header {
   align-items: center;
   justify-content: center;
   max-height: clamp(80px, 20vw, 100px);
-  padding: 10px;
+  padding: clamp(5px, 1vw, 10px);
   border-bottom: 3px solid #B88DFA;
 }
 p {
