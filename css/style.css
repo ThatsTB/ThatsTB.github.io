@@ -22,7 +22,7 @@ h1{
 a {
   font-size: clamp(15px, 2vw, 20px);
   text-decoration: none;
-  margin: clamp(1px, 1vw, 10px);
+  margin: clamp(5px, 1vw, 10px);
 }
 a:link {
   color: black;
