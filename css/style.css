@@ -12,7 +12,7 @@ header {
   align-items: center;
   justify-content: center;
   max-height: clamp(80px, 10vw, 100px);
-  padding: clamp(1px, 1vw, 10px);
+  padding: clamp(5px, 1vw, 10px);
   border-bottom: 3px solid #B88DFA;
 }
 p {
@@ -39,5 +39,5 @@ a:visited {
 img.header-img {
   width: clamp(80px, 10vw, 100px);
   height: clamp(80px, 10vw, 100px);
-  margin-right: clamp(5px, 2vw, 50px);
+  margin-right: clamp(10px, 2vw, 50px);
 }
