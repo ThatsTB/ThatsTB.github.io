@@ -7,11 +7,12 @@ body {
   margin: 0px;
 }
 header {
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
   max-height: clamp(80px, 10vw, 100px);
-  padding: clamp(5px, 1vw, 10px);
+  padding: clamp(1px, 1vw, 10px);
   border-bottom: 3px solid #B88DFA;
 }
 p {
@@ -21,7 +22,7 @@ h1{
 a {
   font-size: clamp(15px, 2vw, 20px);
   text-decoration: none;
-  margin: clamp(3px, 1vw, 9px);
+  margin: clamp(1px, 1vw, 10px);
 }
 a:link {
   color: black;
