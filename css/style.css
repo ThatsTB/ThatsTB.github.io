@@ -33,7 +33,7 @@ a:hover {
 a:active {
   color: #B88DFA;
 }
-a:visited {
+a.active {
   color: #B88DFA;
 }
 img.header-img {
