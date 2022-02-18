@@ -25,15 +25,12 @@ a {
   margin: clamp(5px, 1vw, 10px);
 }
 a:link {
-  color: black;
+  color: ;
 }
 a:hover {
   color: #808080;
 }
-a:active {
-  color: #B88DFA;
-}
-a.active {
+a:active, a.active {
   color: #B88DFA;
 }
 img.header-img {
