@@ -15,6 +15,11 @@ header {
   padding: clamp(5px, 1vw, 10px);
   border-bottom: 3px solid #B88DFA;
 }
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 p {
 }
 h1{
@@ -25,7 +30,7 @@ a {
   margin: clamp(5px, 1vw, 10px);
 }
 a:link {
-  color: ;
+  color: black;
 }
 a:hover {
   color: #808080;
