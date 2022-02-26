@@ -13,7 +13,6 @@ header {
   justify-content: center;
   max-height: clamp(80px, 10vw, 100px);
   padding: clamp(5px, 1vw, 10px);
-  border-bottom: 3px solid #B88DFA;
 }
 div {
   display: flex;
@@ -35,7 +34,7 @@ a:link {
 a:hover {
   color: #808080;
 }
-a:active, a.active {
+a.active {
   color: #B88DFA;
 }
 img.header-img {
