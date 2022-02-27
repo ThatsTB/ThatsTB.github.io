@@ -34,6 +34,9 @@ a:link {
 a:hover {
   color: #808080;
 }
+a:visited {
+  text-decoration: none;
+}
 a.active {
   color: #B88DFA;
 }
