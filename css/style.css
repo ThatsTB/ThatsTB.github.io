@@ -13,16 +13,17 @@ header {
   align-items: center;
   justify-content: center;
   height: clamp(80px, 10vw, 100px);
-  padding: clamp(5px, 1vw, 10px);
+  margin: clamp(5px, 1vw, 10px);
 }
 div {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: clamp(5px, 1vw, 10px);
 }
 object {
-  width: 100%;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
 }
 p {
 }
@@ -33,8 +34,8 @@ a {
   text-decoration: none;
 }
 header a {
-  font-size: clamp(15px, 2vw, 20px);
   text-decoration: none;
+  font-size: clamp(15px, 2vw, 20px);
   margin: clamp(5px, 1vw, 10px);
 }
 a:link {
