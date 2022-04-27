@@ -2,28 +2,28 @@ html {
   font-family: verdana;
 }
 body {
-  overflow: hidden;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 header {
+  top: 0;
   position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
   height: clamp(80px, 10vw, 100px);
-  margin: clamp(5px, 1vw, 10px);
+  padding: clamp(5px, 1vw, 10px);
 }
 div {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: clamp(5px, 1vw, 10px);
+  padding: clamp(5px, 1vw, 10px);
 }
 object {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
 }
 p {
 }
@@ -36,7 +36,7 @@ a {
 header a {
   text-decoration: none;
   font-size: clamp(15px, 2vw, 20px);
-  margin: clamp(5px, 1vw, 10px);
+  padding: clamp(5px, 1vw, 10px);
 }
 a:link {
   color: black;
@@ -53,5 +53,5 @@ a.active {
 header img {
   width: clamp(80px, 10vw, 100px);
   height: clamp(80px, 10vw, 100px);
-  margin-right: clamp(10px, 2vw, 50px);
+  padding-right: clamp(10px, 2vw, 50px);
 }
