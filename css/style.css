@@ -2,6 +2,7 @@ html {
   font-family: verdana;
 }
 body {
+  overflow: hidden;
   padding: 0px;
   border: 0px;
   margin: 0px;
@@ -11,7 +12,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: clamp(80px, 10vw, 100px);
+  height: clamp(80px, 10vw, 100px);
   padding: clamp(5px, 1vw, 10px);
 }
 div {
@@ -19,11 +20,19 @@ div {
   align-items: center;
   justify-content: center;
 }
+object {
+  width: 100%;
+  height: 90vh;
+}
 p {
 }
 h1{
 }
 a {
+  font-size: clamp(15px, 2vw, 20px);
+  text-decoration: none;
+}
+header a {
   font-size: clamp(15px, 2vw, 20px);
   text-decoration: none;
   margin: clamp(5px, 1vw, 10px);
@@ -40,7 +49,7 @@ a:visited {
 a.active {
   color: #B88DFA;
 }
-img.header-img {
+header img {
   width: clamp(80px, 10vw, 100px);
   height: clamp(80px, 10vw, 100px);
   margin-right: clamp(10px, 2vw, 50px);
