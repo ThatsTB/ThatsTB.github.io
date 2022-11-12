@@ -25,7 +25,7 @@ header a {
   padding: clamp(5px, 1vw, 10px);
 }
 div {
-  top: 13vw;
+  top: 9vw;
   position: relative;
   display: flex;
   align-items: center;
