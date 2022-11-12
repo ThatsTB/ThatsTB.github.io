@@ -53,3 +53,16 @@ a:visited {
 a.active {
   color: #B88DFA;
 }
+p {
+  text-align: center;
+  width: 70%;
+  font-size: clamp(10px, 2vw, 15px);
+  padding: clamp(5px, 1vw, 10px);
+  color: black;
+}
+h1 {
+  font-family: century;
+  font-size: clamp(20px, 5vw, 35px);
+  padding: clamp(5px, 1vw, 10px);
+  color: black;
+}
