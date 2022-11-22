@@ -56,13 +56,12 @@ a.active {
 div p {
   text-align: center;
   width: 60%;
-  font-size: clamp(10px, 2vw, 15px);
+  font-size: clamp(7px, 2vw, 12px);
   padding: clamp(5px, 1vw, 10px);
   color: black;
 }
 div h1 {
-  font-family: georgia;
-  font-weight: normal;
+  font-weight: bolder;
   font-size: clamp(20px, 5vw, 35px);
   padding: clamp(5px, 1vw, 10px);
   color: black;
