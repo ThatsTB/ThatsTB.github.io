@@ -1,68 +1,104 @@
+
+/* Algemeen, voor elke pagina */
+
 html {
-  font-family: verdana;
+  	font-family: verdana;
 }
-body {
-  padding: 0;
-  border: 0;
-  margin: 0;
-}
+body, div, a, h1, h2, p, img {
+  	padding: 0;
+  	border: 0;
+  	margin: 0;
+} 
 header {
-  top: 0;
-  position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: clamp(80px, 10vw, 100px);
-  padding: clamp(5px, 1vw, 10px);
-}
-header img {
-  width: clamp(80px, 10vw, 100px);
-  height: clamp(80px, 10vw, 100px);
-  padding-right: clamp(10px, 2vw, 50px);
+	z-index: 1;
+  	top: 0;
+  	position: sticky;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	height: clamp(80px, 10vw, 100px);
+  	padding: clamp(5px, 1vw, 10px);
+	background: #FFFFFF;
 }
 header a {
-  font-size: clamp(15px, 2vw, 20px);
-  padding: clamp(5px, 1vw, 10px);
+  	font-size: clamp(15px, 2vw, 20px);
+ 	padding: clamp(10px, 1vw, 15px);
+}
+header img {
+  	width: clamp(80px, 10vw, 100px);
+  	height: clamp(80px, 10vw, 100px);
+  	padding-right: clamp(15px, 2vw, 25px);
 }
 div {
-  top: 5vw;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: auto;
-  padding: clamp(5px, 1vw, 10px);
+  	top: 1vw;
+  	position: relative;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  	height: auto;
+  	padding: clamp(5px, 1vw, 10px);
 }
 div a {
-  font-size: clamp(15px, 2vw, 25px);
-  padding: clamp(5px, 1vw, 10px);
-}
-a {
-  text-decoration: none;
-}
-a:link {
-  color: black;
-}
-a:hover {
-  color: #808080;
-}
-a:visited {
-  color: black;
-}
-a.active {
-  color: #B88DFA;
-}
-div p {
-  text-align: center;
-  width: 60%;
-  font-size: clamp(7px, 2vw, 12px);
-  padding: clamp(5px, 1vw, 10px);
-  color: black;
+  	font-size: clamp(15px, 2vw, 20px);
+ 	padding: clamp(10px, 1vw, 15px);
 }
 div h1 {
-  font-weight: bolder;
-  font-size: clamp(20px, 5vw, 35px);
-  padding: clamp(5px, 1vw, 10px);
-  color: black;
+	font-size: clamp(20px, 5vw, 32px);
+	padding: clamp(5px, 1vw, 10px);
+	font-weight: bolder;
+	background: #B88DFA;
+  	color: #000000;
+}
+div p {
+  	text-align: center;
+  	width: 60%;
+  	font-size: clamp(10px, 2vw, 16px);
+	padding: clamp(15px, 5vw, 50px);  	
+	color: #000000;
+}
+a {
+  	text-decoration: none;
+}
+a:link {
+  	color: #000000;
+}
+a:link:hover {
+	transition: 0.1s;
+	color: #808080;
+}
+a:visited {
+  	color: #000000;
+}
+a:visited:hover {
+  	transition: 0.1s;
+	color: #808080;
+}
+a.active {
+  	background: #B88DFA;
+}
+a.active:hover {
+  	color: #000000;
+}
+
+/* Alleen voor de pagina 'Now' */
+
+div.now {
+  	align-items: center;
+  	height: auto;
+}
+h2 {
+	width: 40%;
+  	font-size: clamp(10px, 2vw, 15px);
+	padding-top: clamp(15px, 5vw, 50px);
+	font-weight: bold;
+  	color: #000000;
+
+}
+p.now {
+	width: 40%;
+	text-align: left;
+  	font-size: clamp(10px, 2vw, 15px);
+	padding-top: clamp(10px, 5vw, 15px);  	
+	color: #000000;
 }
