@@ -12,7 +12,6 @@ body, div, a, h1, h2, p, img {
 header {
 	z-index: 1;
   	top: 0;
-  	position: sticky;
   	display: flex;
   	align-items: center;
   	justify-content: center;
@@ -52,7 +51,7 @@ div h1 {
 }
 div p {
   	text-align: center;
-  	width: 60%;
+  	width: 60vw;
   	font-size: clamp(10px, 2vw, 16px);
 	padding: clamp(15px, 5vw, 50px);  	
 	color: #000000;
@@ -80,6 +79,43 @@ a.active {
 a.active:hover {
   	color: #000000;
 }
+img {
+	width: 50vh;
+}
+
+/* Alleen voor de pagina 'About' */
+
+img.about {
+	position: absolute;
+}
+img.active {
+	opacity: 0;
+	transition: 1s ease-out;
+}
+div.active:hover img.active {
+	z-index: 1;
+	opacity: 1;
+	transition: 0.5s ease-out;
+}
+.active:hover #active{
+	opacity: 1;
+	transition: 0.5s ease-out;
+}
+#active {
+	transition: 1s ease-out;
+	opacity: 0;
+	text-align: right;
+	color: #B88DFA;
+}
+p.about {
+	z-index: -1;
+	position: absolute;
+	text-align: left;
+  	width: 60vw;
+  	font-size: clamp(10px, 2vw, 16px);
+	padding: clamp(15px, 5vw, 50px);  	
+	color: #000000;
+}
 
 /* Alleen voor de pagina 'Now' */
 
@@ -88,7 +124,7 @@ div.now {
   	height: auto;
 }
 h2 {
-	width: 40%;
+	width: 40vw;
   	font-size: clamp(10px, 2vw, 15px);
 	padding-top: clamp(15px, 5vw, 50px);
 	font-weight: bold;
@@ -96,7 +132,7 @@ h2 {
 
 }
 p.now {
-	width: 40%;
+	width: 40vw;
 	text-align: left;
   	font-size: clamp(10px, 2vw, 15px);
 	padding-top: clamp(10px, 5vw, 15px);  	
