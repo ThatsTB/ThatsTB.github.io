@@ -17,7 +17,6 @@ header {
   	justify-content: center;
   	height: clamp(80px, 10vw, 100px);
   	padding: clamp(5px, 1vw, 10px);
-	background: #FFFFFF;
 }
 header a {
   	font-size: clamp(15px, 2vw, 20px);
@@ -27,6 +26,33 @@ header img {
   	width: clamp(80px, 10vw, 100px);
   	height: clamp(80px, 10vw, 100px);
   	padding-right: clamp(15px, 2vw, 25px);
+}
+footer {
+	position: relative;
+	top: 6vw;
+	z-index: -1;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  	height: clamp(80px, 10vw, 100px);
+  	padding: clamp(5px, 1vw, 10px);
+}
+footer img {
+	top: -20vw;
+	z-index: -2;
+	position: absolute;
+	width: 100vw;
+}
+footer a:link, footer a:visited {
+	font-weight: bold;
+  	color: #B88DFA;
+}
+footer a:link:hover, footer a:visited:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	transition: 0.1s;
+	color: #B88DFA;
 }
 div {
   	top: 1vw;
@@ -44,33 +70,32 @@ div a {
 }
 div h1 {
 	font-size: clamp(20px, 5vw, 32px);
-	padding: clamp(5px, 1vw, 10px);
+	padding: clamp(5px, 1vw, 20px);
 	font-weight: bolder;
 	background: #B88DFA;
   	color: #000000;
 }
-div p {
+div h2, h2 {
+  	font-size: clamp(15px, 2vw, 20px);
+	padding-top: clamp(15px, 5vw, 50px);
+	font-weight: bold;
+  	color: #000000;
+}
+div p, p {
   	text-align: center;
   	width: 60vw;
   	font-size: clamp(10px, 2vw, 16px);
-	padding: clamp(15px, 5vw, 50px);  	
+	padding: clamp(10px, 5vw, 25px);  	
 	color: #000000;
 }
 a {
   	text-decoration: none;
 }
-a:link {
+a:link, a:visited {
   	color: #000000;
 }
-a:link:hover {
+a:link:hover, a:visited:hover {
 	transition: 0.1s;
-	color: #808080;
-}
-a:visited {
-  	color: #000000;
-}
-a:visited:hover {
-  	transition: 0.1s;
 	color: #808080;
 }
 a.active {
@@ -85,7 +110,24 @@ img {
 
 /* Alleen voor de pagina 'About' */
 
+p.about1  {
+	top: 6vw;
+	position: absolute;
+	right: 20vw;
+	width: 40vw;
+	text-align: left;
+  	font-size: clamp(10px, 2vw, 15px);
+	color: #000000;
+}
+img.about1 {
+  	position: relative;
+  	display: flex;
+	right: 25vw;
+  	width: 40vh;
+  	padding: clamp(5px, 1vw, 10px);
+}
 img.about {
+	top: 5vw;
 	position: absolute;
 }
 img.active {
@@ -123,13 +165,8 @@ div.now {
   	align-items: center;
   	height: auto;
 }
-h2 {
+div.now h2 {
 	width: 40vw;
-  	font-size: clamp(10px, 2vw, 15px);
-	padding-top: clamp(15px, 5vw, 50px);
-	font-weight: bold;
-  	color: #000000;
-
 }
 p.now {
 	width: 40vw;
